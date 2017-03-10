@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> 4x4 cube</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	</head>
+	<body>
+		<h1>Rubik's Cube, a Dream From Your Childhood</h1>
+	<div >
+		<button><a href="../index.html"> HOME</a></button>
+		<button><a href="../html/introduction.html"> Introduction</a></button>
+		<button><a href="../html/2x2cube.html">2x2 cube</a></button>
+		<button><a href="../html/3x3cube.html">3x3 cube</a></button>
+		<button><a href="../html/4x4cube.html">4x4 cube</a></button>
+		<button><a href="../html/5x5cube.html">5x5 cube</a></button>
+		<button><a href="../html/contact.html"> CONTACT</a></button>
+	</div>
+	<p> 	<img src="../images/4x4/4x4.png" style="float:right;width:250px;height:250px";></p>
+	Now let's study how to solve a 4x4 cube.
+	The most common way is to reduce a 4x4 cube to a 3x3 cube which we already know how to solve.
+
+	
+	<h2> STEP 1 , Fix The Center 2x2 Blocks. </h2>
+	<p> The first step is to fix the six 2x2 center blocks. Notice that for 4x4 cubes, the centers are not fixed. 
+		For a 3x3 cube, the opposite side of the red center is always orange; the opposite side of the white center 
+		is always yellow. When you let the yellow side face you, and let the green side be the top layer, then the right side is always red.
+		But for the 4x4, it's another case, as you need to pay special attention to the orientation of the center pieces. </p>
+	<p> You could fix any center first. The first center block is very easy. Let's say we have solved the red center block, 
+			 and we want to solve the opposite orange center block without damaging the red center blocks(Fig 1.01). 
+			 (The red center block is on the right, already solved, hidden from our view.)</p>
+	<p> First, we get two 1x2 orange blocks. Then contrary to our common sense, we need to line up these two orange blocks
+	like Fig1.03 (not Fig1.02). </p>
+	<div class="images3">
+	<figure> <img src="../images/4x4/center01x.png" alt="center01" width="180" height="180" >
+			 <figcaption> Fig.1.01 </figcaption> </figure>
+	<figure> <img src="../images/4x4/center02x.png" alt="center02" width="180" height="180" >
+			 <figcaption> Fig.1.02  </figcaption> </figure>
+	<figure> <img src="../images/4x4/center03x.png" alt="center03" width="180" height="180" >
+			 <figcaption> Fig.1.03  </figcaption> </figure>	
+	</div>
+	<p> Now excute movement "<b>f</b>" (Fig.1.04), so that the 1x2 orange blocks on the top move to the same 
+	position as the orange 1x2 block on the right.
+	Next we excute movement "<b>R2</b>" (Fig.1.05),then "<b>f'</b>" (Fig.1.06) so the other 1x2 orange block come back and the opposite  
+	red 2x2 center block (which is on the left side and not shown on the figure) remains the same. </p>
+	<p>Do this for all the centers. </p>
+	<div class="images3">
+	<figure> <img src="../images/4x4/center04x.png" alt="center01" width="180" height="180" >
+			 <figcaption> Fig.1.04 </figcaption> </figure>
+	<figure> <img src="../images/4x4/center05x.png" alt="center02" width="180" height="180" >
+			 <figcaption> Fig.1.05 </figcaption> </figure>
+	<figure> <img src="../images/4x4/center06x.png" alt="center03" width="180" height="180" >
+			 <figcaption> Fig.1.06 </figcaption> </figure>				 
+	</div>
+	<p> Let's see another example. Lets start from Fig.1.07, the movement <b>f'</b> resulting in Fig.1.08, movement <b>U2</b> resulting in Fig.1.09
+	then movement <b>f </b>resuting in Fig.1.10, all center blocks fixed.</p>
+	
+	<div class="images4">
+	<figure> <img src="../images/4x4/center07x.png" alt="center01" width="120" height="120" >
+			 <figcaption> Fig.1.07 </figcaption> </figure>
+	<figure> <img src="../images/4x4/center08x.png" alt="center02" width="120" height="120" >
+			 <figcaption> Fig.1.08  </figcaption> </figure>
+	<figure> <img src="../images/4x4/center09x.png" alt="center03" width="120" height="120" >
+			 <figcaption> Fig.1.09  </figcaption> </figure>	
+	<figure> <img src="../images/4x4/center10x.png" alt="center01" width="120" height="120" >
+			 <figcaption> Fig.1.10 </figcaption> </figure>
+	
+	</div>
+	<p>
+		But if we are not careful, from Fig.1.07, we excute movement <b>f</b> (resulting in Fig 1.11), next<b> R2</b>(resulting in Fig.1.12), after that <b>f'</b> resulting in  
+		Fig.1.13. Now the top layer center block is green, the right center block is red and the front center block is white which is impossible (for a 3x3 cube).
+		Or if we turn Fig.1.13 90 degree resulting in Fig.1.14, the green layer and blue layer are adjacent. It is impossible (for a 3x3 cube). 
+		
+	</p>
+	<div class="images4">
+		<figure> <img src="../images/4x4/center11x.png" alt="center02" width="120" height="120" >
+			<figcaption> Fig.1.11 </figcaption> </figure>
+		<figure> <img src="../images/4x4/center12y.png" alt="center03" width="120" height="120" >
+			 <figcaption> Fig.1.12 </figcaption> </figure>	
+		<figure> <img src="../images/4x4/center13y.png" alt="center02" width="120" height="120" >
+			<figcaption> Fig.1.13 wrong orintation</figcaption> </figure>
+		<figure> <img src="../images/4x4/center14y.png" alt="center03" width="120" height="120" >
+			 <figcaption> Fig.1.14 wrong orintation</figcaption> </figure>	
+	</div>
+	<p> If the center block orientation is wrong, you won't be able to solve the cube. 
+	If you are not sure of the orientation, put an already solved 3x3 cube beside you as a reference.</p>
+	
+	<h2> STEP 2, Combining The Edges. </h2>
+	<p><img src="../images/4x4/center10.png" style="float:left;width:180px;height:180px; margin-right: 100px" >
+	Now that we have the center block solved, to reduce the 4x4 cube to 3x3, we need to solve all the edges. Here
+	a solved edge is a 1x2 block with the same color.
+	For example, in the image to the left, on the front side, 
+	the yellow-orange 1x2 block is solved, but on the right-up column
+	the edge is not. Combining edges is time consuming 
+	but it's very intuitive. We do not need to memorize
+	any formulas. I'll show you the way using examples.
+	</p>
+	<p>
+	First, we try to find a pair of matching cubies.
+	For example, on Fig 2.01, on the front-up column 
+	there is a red-yellow cubie. On the front-down column, 
+	there is also a red-yellow piece (the color yellow is
+	on the down side, not shown in this picture). 
+	They are also on columns beside each other. Let's call this matching pair 
+	position situation (a). In this situation, 
+	we could solve the edge using the following method.
+	<div class="formula"> l' U' R U l </div></p>
+	<p>
+	<div class="images6">
+		<figure> <img src="../images/4x4/edge01y.png" alt="center02" width="100" height="100" >
+			<figcaption> Fig.2.01 </figcaption> </figure>
+		<figure> <img src="../images/4x4/edge02y.png" alt="center03" width="100" height="100" >
+			 <figcaption> Fig.2.02 </figcaption> </figure>	
+		<figure> <img src="../images/4x4/edge03y.png" alt="center02" width="100" height="100" >
+			<figcaption> Fig.2.03 </figcaption> </figure>
+		<figure> <img src="../images/4x4/edge04y.png" alt="center03" width="100" height="100" >
+			 <figcaption> Fig.2.04</figcaption> </figure>	
+		<figure> <img src="../images/4x4/edge05y.png" alt="center02" width="100" height="100" >
+			<figcaption> Fig.2.05 </figcaption> </figure>
+		<figure> <img src="../images/4x4/edge06y.png" alt="center03" width="100" height="100" >
+			 <figcaption> Fig.2.06</figcaption> </figure>	
+	</div>
+	</p>
+	<p>
+	
+	First we excute movement <b>l'</b> so the red-yellow cubies 
+	will be together as a 1x2 block, (Fig 2.02) then <b>U'</b> turning the top layer
+	to the right,(Fig 2.03) next, execute movement <b>R</b>, 
+	so an unsolved 1x2 block will be in the same position of the solved 
+	red-yellow block.(Fig 2.04) Now execute movement <b>U</b> 
+	to come back (Fig 2.05); and movement <b>l</b> to correct the color of the center block 
+	(Fig 2.06) and the newly solved
+	1x2 yellow-red blcok staying safely on back-right column 
+	(you will only see 1x2 yellow color since the red is in the back). </p>
+
+	<p> There is no need to memorize the formula. 
+	You need to understand it. For example, in the formula above "<b>l' U' R U l</b>", instead of "<b>l'</b>"
+	you could use "<b>r</b>" first, then the last movement should be "<b>r'</b>". You could also turn 
+	the top layer to the left first, then the second movement 
+	will be <b>U</b> (and the second last movement will be <b>U'</b>). 
+	Movement <b>R </b>could also be <b>R2</b> or <b>R'</b>, 
+	as our porpose is to replace the solved 1x2 block with a unsolved one. </p> 
+	
+	<h3>Change the Relative Position of the Matching Pair of Cubies </h3>
+	<p> Sometime, we will find two matching pairs of cubies in another position.
+	For example, in Fig 2.07 there is a white-green cubie on the up-front column, and there
+	is also a white-green cubie on the down-front column (the white is 
+	on the down side, hidden from the view). But they are
+	lining up. Let's call this matching pair position situation (b). 
+	Then we need to change this situation to situation (a) so we can solve
+	it using the method above. <br> 
+	There are many ways to do it. 
+	For example, as shown from Fig 2.07 to Fig 2.11, we use formula:</p>
+	<div class="formula">F' R F' U </div>
+	<p>Play with the cube, you will find your own way to do it.</p>
+	
+	<div class="images5">
+		<figure> <img src="../images/4x4/edge_x1x.png" alt="center02" width="110" height="110" >
+			<figcaption> Fig.2.07 </figcaption> </figure>
+		<figure> <img src="../images/4x4/edge_x2x.png" alt="center03" width="110" height="110" >
+			<figcaption> Fig.2.08 </figcaption> </figure>	
+		<figure> <img src="../images/4x4/edge_x3x.png" alt="center02" width="110" height="110" >
+			<figcaption> Fig.2.09 </figcaption> </figure>
+		<figure> <img src="../images/4x4/edge_x4x.png" alt="center03" width="110" height="110" >
+			<figcaption> Fig.2.10</figcaption> </figure>	
+		<figure> <img src="../images/4x4/edge_x5x.png" alt="center02" width="110" height="110" >
+			<figcaption> Fig.2.11 </figcaption> </figure>
+	</div>
+			
+	<h3> The Last Two Pairs Of Edges</h3>
+	<p> Sometimes, in the end there are only two pairs of edges unsolved, 
+	then we cannot use the method we discussed above. First we need to
+	arrange these two pairs of cubies's position in situation(b) like Fig 2.12. 
+	Then we can solve these last two pairs of edges together use the following formua: </br>
+	<div class="formula">r U' F R' U F' r'</div>
+	</p>
+	<div>
+		<img class="mid" src="../images/4x4/edge12y.png" alt="center02" width="120" height="120" > &nbsp&nbsp r &#8594
+			
+		<img class="mid" src="../images/4x4/edge13y.png" alt="center02" width="120" height="120" > &nbsp&nbsp U'&#8594
+			
+		<img class="mid" src="../images/4x4/edge14y.png" alt="center03" width="120" height="120" >  &nbsp&nbsp F &#8594
+		
+		<img class="mid" src="../images/4x4/edge15y.png" alt="center02" width="120" height="120" >  &nbsp&nbsp R'&#8594
+			
+		<img class="mid" src="../images/4x4/edge16y.png" alt="center03" width="120" height="120" >  &nbsp&nbsp U &#8594
+				
+		<img class="mid" src="../images/4x4/edge17y.png" alt="center02" width="120" height="120" >  &nbsp&nbsp F'&#8594
+			
+		<img class="mid" src="../images/4x4/edge18y.png" alt="center03" width="120" height="120" >  &nbsp&nbsp r'&#8594
+			
+		<img class="mid" src="../images/4x4/edge19y.png" alt="center02" width="120" height="120" >
+			
+	</div>
+	<br><br>
+	<h2> STEP 3 SOLVE THE 4x4 CUBE AS IT IS A 3x3 CUBE </h2>
+	<p>Now we have the 4x4 cube with solved centers (2x2 blocks) and edges (1x2 blocks). We can solve it just like a 3x3 cube.
+	However, you will sometimes	encounter situations which will not happen in a 3x3 cube. </p>
+	<h3> Top Yellow Cross Special Case </h3>
+	<p> Assume that we have solved the white layer, the second layer, now we need to solve the up yellow layer. 
+	As a 3x3 we try to get a yellow cross by using the "Fruit" formula. Most of the time, it works. Sometimes it doesn't.
+	If you cannot solve it, use the following formula. </p>
+	<div class="formula"> (r2 B2 U2) (l U2) (r'U2) (r U2) (F2 r F2) (l' B2) r2  </div>
+	<p> You can see the animation here.</p> 
+	<a href="../animation/F44_yellow_cross.html">Yellow Cross Special Case </a> <br>
+	
+	<h3> Special Case: Exchange Two Corners /Edges</h3>
+	 <p>If you only need to exchange two edges, using a very simple formula,
+	 the cube will become the familar 3x3 cube situation. </br>
+	 This formula will move the second layer beside R (between L and R) alone. There is standard notation for this layer
+	 but instead of being buried in the notations, let's just call it Q (I chose the letter Q as in Question). 
+	 </p>
+	<div class="formula"> Q2 U2 Q2 u2 Q2 u2 </div>
+	<a href="../animation/F44_exchange_edge.html">Exchange Two Edges/Corners</a> 
+	<p> If you only need to exchange two corners, using the same formula, the cube will show you a familar status (as in 3x3 cube) again.</p>
+	<p>
+	<b>Now you have solved the 4x4 cube! </b></p>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> introduction</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	</head>
+
+	<body>
+	<h1>Rubik's cube, a dream from your childhood</h1>
+	<div >
+		<button><a href="../index.html"> HOME</a></button>
+		<button><a href="../html/introduction.html"> Introduction</a></button>
+		<button><a href="../html/2x2cube.html">2x2 cube</a></button>
+		<button><a href="../html/3x3cube.html">3x3 cube</a></button>
+		<button><a href="../html/4x4cube.html">4x4 cube</a></button>
+		<button><a href="../html/5x5cube.html">5x5 cube</a></button>
+		<button><a href="../html/contact.html"> CONTACT</a></button>
+	</div>
+	
+	<p>
+		Each Rubik's cube has 26 cubies. (why not 27?). Each cubie has 6 sides just like every other
+		cube in the world. But the cubies in the Rubik's cube are a little different.
+		There are 6 <b>center </b> cubies which only show one side with color; all the other sides are hidden.
+		There are 12 <b>edge </b> cubies which only show two sides with color; 8 <b>corner</b> cubies which will 
+		show three sides with color. So it doesen't matter what do you do, the centers will always be centers,
+		the edges will always be edges and the corners will always be corners.</p>
+		
+	<h3> Rubik's cube movement notations </h3>	
+	<p>	Each cube has six sides. They are:
+	<img src="../images/3x3/step1.32.png" alt="Rubik's cube" style="float:right;width:150px;height:150px;">
+	<br><b>L</b>: left side;
+	<br><b>R</b>: right side;
+	<br><b>D</b>: down side;
+	<br><b>U</b>: up side;
+	<br><b>F</b>: front side;
+	<br><b>B</b>: back side; </p>
+	<p> There are two directions: <b>clockwise</b> and <b>counter clockwise</b>. For example, R denotes clockwise, R' denotes
+	counter clockwise.</p>
+	<p>There are also three hidden layers:
+	<br><b>M</b> – Middle layer  – between left and right. 
+	<br><b>E</b> – Equatorial layer – between down and up. 
+	<br><b>S</b> – Standing layer – between front and back.
+	</p>
+	<p> 
+	When we use M,E,S to denote movement, the direction of <b>M</b> is the same as <b>L</b>;
+	the direction of <b>E</b> is the same as <b>D</b>; the direction of <b>S</b> is the same as <b>F</b>.
+	</p>
+	<p>Other than these sides/layers, there are also axes. If you have learned geometry at school, you know that
+	we live in a 3 dimensional world. Every point in space could be denoted using 3 coordinates. For example,
+	using longitude, latitude, and elevation, we could pin point the exact location of an object. However,
+	we are not going to go there. We will use, x, y, z. <br>
+	<br><b>x</b>: axis with direction from left to right.
+	<br><b>y</b>: axis with direction from down to up.
+	<br><b>z</b>: axis with direction from front to back. </p>
+	
+	<p> When we talk about cubies, to pin point the exact piece, we will say: left-up-front corner or
+	right-up-standing edge (that's the same as right-up-center edge) or right-front-equatorial edge 
+	(that's the same as right-front-center edge) ect; </p>
+	<p> Sometimes we will move two layers
+	together, which will be deonted by a lowercase letter. </p>
+	<p>All of the standard movement notations are shown in
+	the animation below. Usually we only need a few of them. Sometimes, we will also see number 2 following
+	a letter. For example <b>R2</b> or <b>R2'</b> or <b>R'2</b>, which is equal to <b>RR</b>, or <b>R'R'</b>. 
+	The result of the movements are the same. That is: turn right side 180 degrees (clockwise or counter clockwise). 
+	</p>
+		
+	<p> <a href="../animation/F33_movements.html"> Rubik's cube movements animation</a></p>
+	
+	<p>There are so many notations, do I need to remember all of these? Don't worry. Actually you only
+	need to know <b>U U' R R' F F' D</b> to understand all of our basic formulas! </p>    
+		
+	<h3> Clockwise and Counter Clockwise</h3>
+	<p>Some people are very good with directions. Some people are not.
+	<img src="../images/up.jpg" alt="Rubik's cube" style="float:left; margin-right: 20px;  width:80px;height:140px;"> 
+	<img src="../images/right.jpg" alt="Rubik's cube" style="float:right;padding:20px; width:150px;height:80px;">
+	<p> I have always had trouble with clockwise and counter-clockwise.
+	Fortunately we have a convinent way to do it. Make a "thumbs-up" with your right hand, put it on any side of the cube, 
+	thumb away from that side, the direction of the other four fingers
+	is counter-clockwise. </p> 
+	<p>Similarly, clockwise could be representd by the direction of a left hand "thumbs-up", 
+	thumb away from the side.
+	 </p>
+	 <p> The left image shows the direction of U'; 
+	the right image shows direction of R'. </p>
+	<p>The animations in the website are adpated from 
+	<a href="http://collaboradev.com/2015/06/10/new-rubiks-cube-jquery-plugin/"> Jason Graves</a>. 
+	They perform well on Chrome and Safari, but not on Explorer. </p>
+		
+   </body>
+</html>
+

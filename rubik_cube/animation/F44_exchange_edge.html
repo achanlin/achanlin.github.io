@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>exchange two edges or corners</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+
+<body>
+
+
+<div id="control">
+	<p>
+        <input type="button" value="L">
+        <input type="button" value="R">
+        <input type="button" value="B">
+        <input type="button" value="F">
+		<input type="button" value="U">
+		<input type="button" value="D">
+		<input type="button" value="L'">
+        <input type="button" value="R'">
+        <input type="button" value="B'">
+        <input type="button" value="F'">
+		<input type="button" value="U'">
+		<input type="button" value="D'">
+		&nbsp &nbsp &nbsp
+		<input type="button" value="Q">
+	</p>
+	    <input type="button" value="m">
+	    <input type="button" value="s">
+	    <input type="button" value="e">
+	    <input type="button" value="m'">
+		<input type="button" value="s'">
+		<input type="button" value="e'">	
+		&nbsp
+	    <input type="button" value="x">
+		<input type="button" value="y">
+		<input type="button" value="z">
+		<input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'">		
+	</p>
+	<p>
+        <input type="button" value="l">
+        <input type="button" value="r">
+        <input type="button" value="b">
+        <input type="button" value="f">
+		<input type="button" value="u">
+		<input type="button" value="d">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	    <input type="button" value="l'">
+        <input type="button" value="r'">
+        <input type="button" value="b'">
+        <input type="button" value="f'">
+		<input type="button" value="u'">
+		<input type="button" value="d'">	
+
+    </p>
+</div>
+<div class="row">
+	<div class="column">
+		<div class="cube"></div></div></div>
+
+<input type="button" id="ini" value="press me first" name="Q2 U2 Q2 u2 Q2 u2 U2" onClick="getInitialStatus()">	
+<p> Press button "y" to turn the cube around, you will see that you only need to exchange two deges.<br>
+Now put the edge which you need to move (to the back) facing you, and using the formula below, <br>
+you will solve the cube. (You may still need to turn the up layer, but that is simple.) </p>
+
+<input type="button" id="run" value="Q2 U2 Q2 u2 Q2 u2" onClick="runContinuously()">
+
+<p>This is just an example, you may encounter other cases which are different.
+Using the above formula will alway bring you back to the familiar 3x3 situation.</p>
+
+<script src = "../js/jquery-3.1.1.min.js"></script>
+<script src = "../js/jquery.cube4x4.js"></script>
+<script src = "../js/animation.js"></script>
+
+</body>
+</html>

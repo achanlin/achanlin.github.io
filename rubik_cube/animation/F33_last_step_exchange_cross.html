@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formula last step exchange cross</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+
+</head>
+
+<body>
+
+
+<div id="control">
+	<p>
+        <input type="button" value="L">
+        <input type="button" value="R">
+        <input type="button" value="B">
+        <input type="button" value="F">
+		<input type="button" value="U">
+		<input type="button" value="D">
+		<input type="button" value="L'">
+        <input type="button" value="R'">
+        <input type="button" value="B'">
+        <input type="button" value="F'">
+		<input type="button" value="U'">
+		<input type="button" value="D'">
+	</p>
+	<p>
+	    <input type="button" value="M">
+	    <input type="button" value="S">
+	    <input type="button" value="E">
+	    <input type="button" value="M'">
+		<input type="button" value="S'">
+		<input type="button" value="E'">	
+		&nbsp
+		
+	    <input type="button" value="x">
+		<input type="button" value="y">
+		<input type="button" value="z">
+		<input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'">		
+	</p>
+	<p>
+        <input type="button" value="l">
+        <input type="button" value="r">
+        <input type="button" value="b">
+        <input type="button" value="f">
+		<input type="button" value="u">
+		<input type="button" value="d">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	    <input type="button" value="l'">
+        <input type="button" value="r'">
+        <input type="button" value="b'">
+        <input type="button" value="f'">
+		<input type="button" value="u'">
+		<input type="button" value="d'">	
+
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="cube"></div></div></div>
+<input type="button" id="ini" value="press me first" name="M2 U M2 U2 M2 U M2" onClick="getInitialStatus()">	
+<br>
+<br>			
+<input type="button" id="run" value="M2 U M2 U2 M2 U M2" onClick="runContinuously()">	
+
+<script src = "../js/jquery-3.1.1.min.js"></script>
+<script src = "../js/jquery.cube.min.js"></script>
+<script src = "../js/animation.js"></script>
+
+</body>
+</html>

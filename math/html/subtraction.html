@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Subtraction</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<style>
+		div {
+			margin-top:20px;
+			}
+		</style>
+	</head>
+
+<body>
+	<table id="t01">
+		<tr>
+			<td><a href="../index.html"> HOME</a></td>
+			<td> <a href="../html/addition.html"> Addition </a> </td>
+			<td> <a href="../html/subtraction.html">Subtraction</a> </td>
+			<td> <a href="../html/multiplication.html">Multiplication</a> </td>
+			<td> <a href="../html/division.html">Division </a> </td>
+				<td><a href="contact.html"> CONTACT</a></td>
+		</tr>
+	</table>
+		<center>
+		<h4> SUBTRACTION </h4>
+		</center>
+	<div>
+	<form id="maths" action="">  
+	<table class="center" border="1px" >
+		<tr>
+			<td align="center" ><input type="button" value="Start"  onClick="start_game()"></td>
+			<td align="center" ><input type="button" value="Finish" onClick="finish()"></td></tr>
+		<tr>
+			<td><input type="text"  name="number1" id="number1" ><input type="button" value="-"  id="operator" ></td>
+			<td><input type="text"  name="number2" id="number2" ></td></tr>
+		<tr>
+			<td align="right"> <input type="button" value="=" align="center"> </td> 
+			<td><input type="text" name="answer" id="answer" > </td> </tr>
+		<tr>
+			<td><input type="button" value="Check" onClick="check_it()"></td>
+			<td><input type="text" id="correct_answer" ></td></tr>
+		<tr>
+			<td colspan=2 align="center"> <input type="button" value="Next_Question" onClick="get_question()"> </td> </tr>	
+		<tr>
+			<td><input type="button" value="Questions Done:"></td>
+			<td><input type="text" name="questions" id="questions" value="" readonly="readonly"></td></tr>
+		<tr>
+			<td><input type="button" value="Right Answers"></td>
+			<td><input type="text" name="rights"    id="rights"    value="" readonly="readonly"></td></tr>
+		<tr>
+			<td><input type="button" value="Wrong Answers"></td>
+			<td><input type="text" name="wrongs"    id="wrongs"    value="" readonly="readonly"></td></tr>
+   </table>
+   </form>  
+   </div>
+   <br>.................<br> 
+   <textarea align="center" name="comments" id="comments" rows="4" cols="44" > Comments </textarea>
+<script src="../js/subtraction.js"></script>
+</body>
+</html>
+
