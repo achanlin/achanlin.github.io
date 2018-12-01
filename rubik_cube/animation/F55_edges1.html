@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>F55_edges1</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+
+<body>
+
+
+<div id="control">
+	<p>
+        <input type="button" value="L">
+        <input type="button" value="R">
+        <input type="button" value="B">
+        <input type="button" value="F">
+		<input type="button" value="U">
+		<input type="button" value="D">
+		<input type="button" value="L'">
+        <input type="button" value="R'">
+        <input type="button" value="B'">
+        <input type="button" value="F'">
+		<input type="button" value="U'">
+		<input type="button" value="D'">
+	</p>
+	    <input type="button" value="M">
+	    <input type="button" value="S">
+	    <input type="button" value="E">
+	    <input type="button" value="M'">
+		<input type="button" value="S'">
+		<input type="button" value="E'">	
+		&nbsp
+	    <input type="button" value="x">
+		<input type="button" value="y">
+		<input type="button" value="z">
+		<input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'">		
+	</p>
+	<p>
+        <input type="button" value="l">
+        <input type="button" value="r">
+        <input type="button" value="b">
+        <input type="button" value="f">
+		<input type="button" value="u">
+		<input type="button" value="d">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	    <input type="button" value="l'">
+        <input type="button" value="r'">
+        <input type="button" value="b'">
+        <input type="button" value="f'">
+		<input type="button" value="u'">
+		<input type="button" value="d'">	
+
+    </p>
+	
+</div>	
+<input type="button" id="ini" value="press me first" name=" u L' F U' L F' u'" onClick="getInitialStatus()">	
+<br>
+<br>
+<input type="button" id="run" value="u L' F U' L F' u' " onClick="runContinuously()">
+
+	<input type="button" id="refresh" value="refresh" onClick="location.reload()">
+	
+
+<div class="row">
+	<div class="column">
+		<div class="cube"></div></div></div>
+
+ <p>
+Using y' you will see that the other red-green edge piece in on the left-bottom edge. We want to move that piece to the right-top edge position. Formula u L' F U' L F' u' will help you get there. </p>
+<script src = "../js/jquery-3.1.1.min.js"></script>
+<script src = "../js/jquery.cube5x5.js"></script>
+<script src = "../js/animation.js"></script>
+
+
+</body>
+</html>
