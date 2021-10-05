@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> 3x3 cube</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	</head>
+
+	<body>
+	<h1>Rubik's Cube, a Dream From Your Childhood</h1>
+	<div >
+		<a href="../index.html"> HOME</a>&nbsp&nbsp
+		<a href="../html/introduction.html"> INTRODUCTION</a> &nbsp&nbsp
+		<a href="../html/2x2cube.html">2x2 CUBE</a>&nbsp&nbsp
+		<a href="../html/3x3cube.html">3x3 CUBE</a>&nbsp&nbsp
+		<a href="../html/4x4cube.html">4x4 CUBE</a>&nbsp&nbsp
+		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
+		<a href="../html/5x5cube_v1.html">5x5 CUBE again</a>&nbsp&nbsp
+		<a href="../html/contact.html"> CONTACT</a>&nbsp&nbsp
+	</div>
+	<p> <img src="../images/3x3/3x3.png" style="float:right;width:250px;height:250px";></p>
+	<p> Here we will study how to solve a 3x3 Rubik's cube. There are many ways to do it.
+		The method introduced here requires minimum memory work and is very intuitive. 
+		We solve it layer by layer, starting with the white layer.
+		Of course we could begin with any color. Here we just follow the tradition. 
+		After we solve the white layer, we will set it as the bottom layer then solve the second layer; 
+		Then we will solve the top layer.</p>
+
+	<h2>STEP1: SOLVE THE WHITE LAYER </h2>
+			
+	<h3>Step1.1 White Cross With Matching Edge Pieces On Each Side</h3>
+	<p>In this step, we will solve the white layer, it will be the bottom layer in our final solved cube. 
+	<img src="../images/3x3/step1.20.png" alt="a white cross with T on each side"  style=" width:150px;height:150px;">
+	But to make it easy, we will work it on the top layer. That is we try to make the top layer 
+	look like a white cross with matching edegs on each side.  There are many ways to do it, and I trust that you can work it out youself.
+	</p>
+	  
+	<h3>Step1.2 Bottom White Layer With T On Each Side</h3>
+	<p>
+	Now we maneuver the cube of the top layer so all 4 corners are white too. But white is not the only condition. Let's look at Fig.1.2. 
+	The up color of the right-back corner cubie is white. But it's not the one we want. Why? 
+	Because the center piece of the right layer is green.
+	Eventually every cubie should have green color on the right side. But the right-back corner piece on the right side is blue.
+	It should be green. Match the green center piece on the right face. At the end of this step, your cube should look like Fig 1.2 with top layer all white and 
+	the edegs have matching color to their corresponding center pieces.
+	</p>
+	<div class="images3">
+	<figure> <img src="../images/3x3/step1.30.png" alt="wrong white piece on the corner" width="150" height="150" >
+			 <figcaption> Fig.1.1 wrong corner piece </figcaption> </figure>
+	<figure> <img src="../images/3x3/step1.31.png" alt="white layer with T" width="150" height="150" >
+			 <figcaption> Fig.1.2 white layer with T  </figcaption> </figure>
+	<figure> <img src="../images/3x3/step1.32.png" alt="buttom white layer with upside down T" width="150" height="150" >
+			 <figcaption> Fig.1.3 white bottom with upside down T  </figcaption> </figure>		 
+	</div>
+	<p>Now we rotate the cube 180 degrees so the white layer is on the bottom (Fig 1.3). </p>
+	
+	<h2>STEP2: SOLVE THE SECOND LAYER (THE EDGES)</h2>
+	<p> Now we want to solve the second layer. The center pieces of the second layer has solved from step 1.
+	We need to make the edges of the second layer the same color as the center piece. Try to rotate the top layer of the cube, 
+	then we will encounter three cases: </p>
+	<p><b>(a) We need to move the up-front edge cubie (facing us) to the right-front edge position </b>(Fig 2.1).
+	In this case we could apply the following formula. We call it "To the Right": </p>
+	<div class="formula"> (U R U' R') (U' F' U F) </div> <br>
+	<a href="../animation/F33_to_the_right.html">To The Right</a> <br>
+	<p><b>(b) A mirror image of situation (a) where we need to move the up-front edge cubie to the left-front edge position </b>(Fig 2.2)
+	We call it "To the Left":</p>
+		<div class="formula"> (U' L' U L)(U F U' F')</div><br>
+	<a href="../animation/F33_to_the_left.html">To The Left</a> <br>
+	<div class="images3">
+	<figure> <img src="../images/3x3/step2.01b.png" alt="top to right" width="150" height="150" >
+			 <figcaption> Fig.2.1 </figcaption> </figure>
+	<figure> <img src="../images/3x3/step2.02b.png" alt="result" width="150" height="150" >
+			 <figcaption> Fig.2.2</figcaption> </figure>	
+	<figure> <img src="../images/3x3/step2.03.png" alt="complete step 2" width="150" height="150" >
+			 <figcaption> Fig.2.3 </figcaption> </figure>			 
+		 
+	</div>
+	
+	<p> Notice that the first step of the formula always moves the cubie farther away from the postion it wants to go. </p>
+	<p><b>(c) None of the above.</b> </p>
+	<p>In this case, we just need to apply either of the formulas above once, to put a random piece to replace the edge which we need for case (a) and (b), 
+	then the cube will be in status (a) or (b), we then apply the formula accordingly. This step takes a bit more time as we have a few edegs to solve. 
+	You will use these formulas again and again and you will be able to memorise them in no time. </p>
+	
+	<h2>STEP3: SOLVE THE TOP YELLOW CROSS</h2>
+	<p> After step 2, the top yellow face will only have four situations: it has a yellow cross on the top, in which case we do not need to do anything; 
+		or it has a yellow center; or it has a shape looks like a 90 degree rotated L; or it has a horizontal yellow line on the top.
+		Our first step is to make a yellow cross on the top.</p>
+	 <img src="../images/3x3/step3.15.png" alt="yellow cross" style="float:right;width:150px;height:150px" >
+			
+	<p>Here we need remember a simple formula: </p>
+	<div class="formula"> F R U R' U' F'</div> 
+	<p> You can check the formula animation here. Let's call it "Fruit". </p>
+	<a href="../animation/F33_fruit.html">Fruit </a> <br>
+	<p>This formula will be used more than once. If it's only the center that's yellow, you will need to use the formula 3 times;
+		If you have a 90 degree rotated L, you'll need to use the formula twice; if you have a line (<b>make the line horizontal to you</b>), you only need to use it once.</p>
+	<div class="images3">
+	<figure> <img src="../images/3x3/step3.10.png" alt="a yellow dot in the center" width="150" height="150" >
+			 <figcaption> Fig.3.0 a yellow dot </figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.11.png" alt="an upside down L" width="150" height="150" >
+			 <figcaption> Fig.3.1 a 90 degree L</figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.14.png" alt="yellow line" width="150" height="150" >
+			 <figcaption> Fig.3.4 a horizontal yellow line</figcaption> </figure>		 
+	</div>	
+	<p> Notice that Fig 3.2 still counts as a 90 degree L. And if you get a vertical yellow line
+	(Fig 3.3), you need to rotate the cube so it become a horizontal yellow line.</p>
+	<div class="images3">
+	<figure> <img src="../images/3x3/step3.12.png" alt="an upside down L" width="150" height="150" >
+			 <figcaption> Fig.3.2 </figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.13.png" alt="yellow line" width="150" height="150" >
+			 <figcaption> Fig.3.3 </figcaption> </figure>		 
+	</div>	
+	
+	<h2>STEP4: MAKE THE TOP LAYER ALL YELLOW</h2>
+	
+	<p>Now the top yellow cross is solved. There are 4 corner cubies on the top layer we need to deal with. The top layer now will be in one of the five situations below.
+	</p>
+	<div class="images3">
+
+	<figure> <img src="../images/3x3/step3.21b.png" alt="a counter clockwise fish" width="150" height="150" >
+			 <figcaption> Fig.4.1 counter-closewise fish</figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.20b.png" alt="a clockwise fish" width="150" height="150" >
+			 <figcaption> Fig.4.2 a clockwise fish </figcaption> </figure>
+    </div>
+	<div class="images3">
+	<figure> <img src="../images/3x3/step3.23.png" alt="two wrong colors" width="150" height="150" >
+			 <figcaption> Fig.4.3 two wrong colors </figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.24.png" alt="two wrong colors" width="150" height="150" >
+			 <figcaption> Fig.4.4 two wrong colors</figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.25.png" alt="4 wrong colors" width="150" height="150" >
+			 <figcaption> Fig.4.5 Four wrong colors </figcaption> </figure>		 
+	</div>	
+	<h3> (a) Situation 1 (Fig 4.1) </h3>
+	
+	<p>We call it clockwise fish pattern. (Does it look like a fish head?) <br>
+	To solve this, try the <a href="../animation/F33_fish_ccw.html">Counter-Clockwise Fish </a> formula: <br>
+	<div class="formula"> R' U' R U' R' U'2 R </div> <br> 
+	Notice that in this formula,the top layer is always turning counter clockwise. That's why we call it counter-clockwise fish pattern. </p>
+	
+	<h3> (b) Situation 2 (Fig 4.2)</h3>
+	<P>The yellow color patterns on the top is the exact mirror image of situation 1. We call it clockwise fish pattern. 
+	To solve this we apply the <a href="../animation/F33_fish_cw.html">Clockwise Fish </a> formula: <br> 
+	<div class="formula" >L U L' U L U2 L' </div></p>
+	<p>Notice that in the formula above, the top layer is always turning clockwise. That is why we call it clockwise fish pattern. </p>
+		
+	<p><b>These two formulas are important. We will use it on the last step too. So make sure you understand which pattern is counter clockwise fish pattern,
+	which pattern is clockwish fish pattern and how to position them.</b> </p>
+	
+	<h3> (c) None of the above (Fig 4.3, Fig 4.4 and Fig 4.5) </h3>
+	<p> In this case, we will still use the two formulas above, but we need to use them more than once.
+	If there are 2 cubies whose colors are not right, we maneuver the cube so that the color at the back of the left-back-up cubie is yellow;
+	if there are 4 cubies whose colors are not right, we maneuver the cube so that the color at the left of the left-back-up cubie is yellow.
+	(So <b>"2 on the back 4 on the left"</b>) Then applying the counter-clockwise fish formula, we will get the fish pattern.
+	</p>
+	
+	
+	<h2>STEP5: REARRANGE THE UP LAYER'S CORNER PIECES</h2>
+	
+	<p>Here we have two cases: <br>
+	<h3>(a) There is a side whose two up corner pieces' color are same.</h3>. <br>
+	 </p>  
+	<div class="images3">
+	<figure> <img src="../images/3x3/step3.30.png" alt="2 corner colors same" width="150" height="150" >
+			 <figcaption> Fig.5.1 two corner colors are same </figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.31.png" alt="2 corner colors same" width="150" height="150" >
+			 <figcaption> Fig.5.2 two corner colors are same </figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.32.png" alt="2 corner colors diferent" width="150" height="150" >
+			 <figcaption> Fig.5.3 two corner colors are different</figcaption> </figure>		 
+	</div>
+	<br>
+	In this case (Fig 5.1, Fig 5.2), we first put the side whose two corner-pieces showing the same color <b>on the right </b>, and 
+	<b>make the yellow layer the front layer (face us) </b>. Then apply formula (We call it R2D2.). <br><br>
+	<div class="formula"> R2 D2 R' U' R D2 R' U R' </div>
+	<a href="../animation/F33_R2D2.html">R2D2 </a> 
+	<br>
+	<p>After applying the formula, do not forget to rearrange the cube so the yellow face is the up layer again.</p>
+	<h3>(b) We could not find a side whose two corners showing the same color</h3>
+	In this situation (Fig 5.2), it does not matter which side is on the right, but <b>the yellow should still face you </b>. After applying the same R2D2 formula, 
+	the cube will be in situation (a).
+	
+	<h2>STEP6: FIX THE UP LAYER'S EDGE PIECES. </h2>
+	<p>This is the last step. We're almost there. Now the top yellow layer of the cube will only be one of in the following 4 situations.</p>
+	
+	<div class="images4">
+	<figure> <img src="../images/3x3/step3.40.png" alt="fish1" width="150" height="150" >
+			 <figcaption> Fig.6.1</figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.41.png" alt="fish2" width="150" height="150" >
+			 <figcaption> Fig.6.2  </figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.42.png" alt="cross" width="150" height="150" >
+			 <figcaption> Fig.6.3 </figcaption> </figure>
+	<figure> <img src="../images/3x3/step3.43.png" alt="paralle lines" width="150" height="150" >
+			 <figcaption> Fig.6.4 </figcaption> </figure>
+	</div>
+	
+	<p>
+	For the first two cases (Fig 6.1 and Fig 6.2), there is one side which is solved and there are three cubies which have wrong colors. 
+	In these cases, we need to use both clockwise fish pattern formula and counter-clockwise fish pattern formula, but in different order. <br> 
+	Let us position the cube so <b>the solved side facing us</b>.
+	<h3>(a) The three wrong cubies should be moved counter-clockwise (Fig 6.1).</h3>
+	<p>In this case, we will first use the counter-clockwise fish formula. 
+	After that, the cube will show a clockwise fish shape. We reposition the cube as in Fig 3.21 and apply the clockwise fish pattern formula. 
+	The cube then will be solved. </p> 
+	<img src="../images/3x3/step3.40.png" width="100" height="100">
+	<a href="../animation/F33_last_step_ccw_3cubies.html">counter-clockwise fish + rotate the whole cube to the right + clockwise fish</a> <br>
+	
+	<h3>(b) The three wrong cubies should be moved clockwise (Fig 6.2).</h3>
+	<p>In this case, we will first use the clockwise fish formula. After that, 
+	the cube will show a a counter-clockwise fish shape. We then reposition the cube as in Fig 3.20, 
+	and apply the counter-clockwise fish formula, the cube  then will be solved. </p>
+	<img src="../images/3x3/step3.41.png" width="100" height="100" >
+	<a href="../animation/F33_last_step_cw_3cubies.html">clockwise fish + rotate the whole cube to the left + counter-clockwise fish</a> <br>	
+	<p>
+	<h3> (c) None of the above (Fig 6.3 or Fig 6.4)</h3> 
+	In this case, you could use either clockwise fish formula or counter-clockwise fish formula, the cube will be converted to situation (a) or situation (b). Apply the correspondiing 
+	formulas, the cube is solved. However, in this way, we need to apply the fish pattern formulas three times.</p>
+	<p> You could save a lot of time by memorizing another two very simple formulas.</p>
+	<div class="images2">
+	<figure>
+	<img src="../images/3x3/step3.42.png" alt="" width="100" height="100" >
+	<figcaption><a href="../animation/F33_last_step_exchange_cross.html">M2 U M2 U2 M2 U M2</a> </figcaption></figure>
+		
+	<figure>
+	<img src="../images/3x3/step3.43.png" alt="" width="100" height="100" >
+	<figcaption><a href="../animation/F33_last_step_exchange.html">M2U M2U MU2 M2U2 MU2</a> </figcaption></figure>	
+	</div>
+	<p> Now we're done! You have solved the Rubik's cube. Enjoy. </p>
+	
+	
+		
+   </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> 4x4 cube</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	</head>
+	<body>
+		<h1>Rubik's Cube, a Dream From Your Childhood</h1>
+	<div >
+		<a href="../index.html"> HOME</a>&nbsp&nbsp
+		<a href="../html/introduction.html"> INTRODUCTION</a> &nbsp&nbsp
+		<a href="../html/2x2cube.html">2x2 CUBE</a>&nbsp&nbsp
+		<a href="../html/3x3cube.html">3x3 CUBE</a>&nbsp&nbsp
+		<a href="../html/4x4cube.html">4x4 CUBE</a>&nbsp&nbsp
+		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
+		<a href="../html/5x5cube_v1.html">5x5 CUBE again</a>&nbsp&nbsp
+		<a href="../html/contact.html"> CONTACT</a>&nbsp&nbsp
+	</div>
+	<p> <img src="../images/4x4/4x4.png" style="float:right;width:250px;height:250px";></p>
+	Now let's study how to solve a 4x4 cube.
+	The most common way is to reduce a 4x4 cube to a 3x3 cube which we already know how to solve.
+	<h2> STEP 1 , Solve The Center 2x2 Blocks. </h2>
+	<p> The first step is to fix the six 2x2 center blocks. 
+	<img src="../images/4x4/center20.png" alt="center02" width="80" height="80" >
+	Unlike 3x3 or 5x5 cubes whose center is fixed,
+	here we need to pay special attention to the relative positions of center blocks. 
+	If the center block orientation is wrong, you won't be able to solve the cube. 
+	If you are not sure of the orientation, put a solved 3x3 cube beside you as a reference.</p>
+	<p> It's not hard to solve the center blocks, practice makes perfect. If you encount some difficulties, the following 2 formulas will help. </p>
+	<p>Let's put the center block you want to solve on the front side (face). </p>
+	<p><img src="../images/4x4/center15.png" style="float:left;width:150px;height:150px"; > 
+	(1) If the piece you needed is on the adjacent side: First, we maneuve the sides so the relative positions 
+	of the needed piece and the center block are same as the image on the left. Then apply the following formula. <br>
+	<center><b><a href="../animation/F44_center_block1.html">r U r' U r U2 r'</a> </b></center> </p>
+	<br><br>
+	<p><img src="../images/4x4/center16.png" style="float:right;width:200px;height:200px"; >
+	(2) If the pieces you needed is on the opposite side: First we turn the sides so the relative positions 
+	of the needed piece and the center block are same as the image on the right.Then apply the following formula. 
+	<center><b><a href="../animation/F44_center_block2.html">r2 B r'2 B r2 B2 r'2</a> </b></center>
+	<br><br><br><br><br> 
+	</p>
+	
+	<h2> STEP 2, Combining The Edges. </h2>
+	<p> Combining edges is time consuming but it's very intuitive. 
+	First, we will find the two matching edge pieces and put them together on one side. 
+	There are two different situations.
+	</p>
+	<h3> situation A </h3>
+	<p> In this case, the two edges are not line up(Fig.2.1). 	
+		We could use some formula to convert situation A to situation B. There are many ways to do it, you could find it yourself. For example, in the following case : <center><b>R F' U F </b></center></p>
+	<p>
+	<div class="images5">
+		<figure> <img src="../images/4x4/F44_a1.png" alt="center02" width="100" height="100" >
+			<figcaption> Fig.2.1 </figcaption> </figure>
+		<figure> <img src="../images/4x4/F44_a2.png" alt="center03" width="100" height="100" >
+			 <figcaption> Fig.2.2 </figcaption> </figure>	
+		<figure> <img src="../images/4x4/F44_a3.png" alt="center02" width="100" height="100" >
+			<figcaption> Fig.2.3 </figcaption> </figure>
+		<figure> <img src="../images/4x4/F44_a4.png" alt="center03" width="100" height="100" >
+			 <figcaption> Fig.2.4</figcaption> </figure>	
+		<figure> <img src="../images/4x4/F44_a5.png" alt="center02" width="100" height="100" >
+			<figcaption> Fig.2.5 </figcaption> </figure>
+	</div>
+	</p>
+	Or we could use an intuitive way. For example, useing formula: <br><br>
+	<center><b> u L' (U/U2/U') L u' </b></center><br>
+	Here <b> u </b> will put the two matching piece together as 1x2 block. The matching blocks is on the left, so we will turn the left and the top so the matching block will be safely away (not effected) by our following movement, and its position will be cocupied by an unsolved edge block. <b> L u' </b> to make sure we put the center blocks back to its orignal solved situation. 
+	
+	<h3> situation B </h3>
+	<p> In this case, the two edges are line up(Fig.2.2). 
+	<img src="../images/4x4/edge_x2x.png" style="float:left;width:100px;height:100px"; > We could turn the cube to convert situation B to situation A. There are many ways to do it. However, we will introduce another formula to solve this case directly. It will increase your speed and it is also used in 5x5 edge groups. </p>
+	<div class="formula"> u L' F U' L F' u'</div></p>
+	
+	<p> Using these methods we could solve all 12 edge blocks.Now the 4x4 cube is reduced to 3x3 and we could solve it using the same way to solve 3x3 cubes.</p>
+	
+				
+	<h2> STEP 3 SOLVE THE 4x4 CUBE AS IT IS A 3x3 CUBE </h2>
+	<p>Now we have the 4x4 cube with solved centers (2x2 blocks) and edges (1x2 blocks). We can solve it just like a 3x3 cube.
+	However, you will sometimes	encounter situations which will not happen in a 3x3 cube. </p>
+	<h3> Top Yellow Cross Special Case </h3>
+	<p> Assume that we have solved the white layer, the second layer, now we need to solve the up yellow layer. 
+	As a 3x3 we try to get a yellow cross by using the "Fruit" formula. Most of the time, it works. Sometimes it doesn't.
+	If you cannot solve it, use the following formula. </p>
+	<div class="formula"> (r2 B2 U2) (l U2) (r'U2) (r U2) (F2 r F2) (l' B2) r2  </div>
+	<p> You can see the animation here.</p> 
+	<a href="../animation/F44_yellow_cross.html">Yellow Cross Special Case </a> <br>
+	
+	<h3> Special Case: Exchange Two Corners /Edges</h3>
+	 <p>If you only need to exchange two edges, using a very simple formula,
+	 the cube will become the familar 3x3 cube situation. </br>
+	 This formula will move the second layer beside R (between L and R) alone. There is standard notation for this layer
+	 but instead of being buried in the notations, let's just call it Q (I chose the letter Q as in Question). 
+	 </p>
+	<div class="formula"> Q2 U2 Q2 u2 Q2 u2 </div>
+	<a href="../animation/F44_exchange_edge.html">Exchange Two Edges/Corners</a> 
+	<p> If you only need to exchange two corners, using the same formula, the cube will show you a familar status (as in 3x3 cube) again.</p>
+	<p>
+	<b>Now you have solved the 4x4 cube! </b></p>
+		
+	</body>
+</html>

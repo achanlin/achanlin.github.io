@@ -1,0 +1,50 @@
+open git bash
+cd "my documents"
+cd "My Web Sites"
+cd achanlin.github.io
+
+
+git add --all
+git commit -m "Initial commit"
+git push -u origin master
+
+/***********************************************************/
+
+Sometimes you may find deleting the commit history of your github project repository useful. You can easily delete the commit history by following the procedure below.
+
+It is always useful to keep the backup of your repository in your computer before removing all the commit history.
+
+Let us start by cloning a github project. I am cloning ‘myproject’, you clone yours.
+
+
+$ git clone https://github.com/achanlin/achanlin.github.io.git
+Since all the commit history are in the “.git” folder, we have to remove it. So, go inside your project folder. 
+
+
+$ cd achanlin.github.io
+And delete the ‘.git folder’ with this command.
+
+
+$ rm -rf .git
+Now, let us re-initialize the repository.
+
+
+$ git init
+ 
+$ git remote add origin https://github.com/achanlin/achanlin.github.io.git   # add remote url
+
+ 
+$ git remote -v
+
+Next, let us add all our files and commit the changes.
+
+
+$ git add --all
+$ git commit -am 'initial commit'
+Now, since we just have one commit i.e ‘initial commit’. Let us force push update to our master branch of our project repository.
+
+$ git push -f origin master
+You may need to provide the credentials for your account.
+
+Go and check your project repository in github, you should see only one commit.
+

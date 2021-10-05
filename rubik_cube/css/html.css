@@ -1,0 +1,48 @@
+	.images6 {
+    -webkit-column-count: 6; /* Chrome, Safari, Opera */
+    -moz-column-count: 6; /* Firefox */
+    column-count: 6;
+	}
+	.images5 {
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+	}
+	.images4 {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+	}
+	.images3 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	}
+	.images2 {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	}
+	.formula{
+		font-family: 'Helvetica Neue', Arial, sans-serif;
+		color: black;
+		text-align: center;
+		font-weight:bold;
+	}
+	.formulaAnimation{
+		font-family: 'Helvetica Neue', Arial, sans-serif;
+		color: Red;
+		text-align: center;
+		font-weight:bold;
+	}
+	.cc{
+	font-weight: bold;
+	text-align: center;}
+	.images4 {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+	}
+	img.mid{
+	vertical-align: middle;
+	}
