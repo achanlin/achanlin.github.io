@@ -842,7 +842,7 @@ $.fn.cube = function(options){
 
 				break;
 
-            case "E":
+            case "E'":
 				var from = getCubits("y", 1);
                 var to = generateToArray(from, "cw");
 
@@ -856,7 +856,7 @@ $.fn.cube = function(options){
 
 				break;
 
-            case "E'":
+            case "E":
 				var from = getCubits("y", 1);
                 var to = generateToArray(from, "ccw");
 
