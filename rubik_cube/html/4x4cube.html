@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> 4x4 cube</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	</head>
+	<body>
+		<h1>Rubik's Cube, a Dream From Your Childhood</h1>
+	<div >
+		<a href="../index.html"> HOME</a>&nbsp&nbsp
+		<a href="../html/introduction.html"> INTRODUCTION</a> &nbsp&nbsp
+		<a href="../html/2x2cube.html">2x2 CUBE</a>&nbsp&nbsp
+		<a href="../html/3x3cube.html">3x3 CUBE</a>&nbsp&nbsp
+		<a href="../html/4x4cube.html">4x4 CUBE</a>&nbsp&nbsp
+		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
+		<a href="../html/contact.html"> CONTACT</a>&nbsp&nbsp
+	</div>
+	<p> <img src="../images/4x4/4x4.png" style="float:right;width:250px;height:250px";></p>
+	Let us now examine how to solve a 4x4 cube.
+	The most common method is to reduce a 4x4 cube to a 3x3 cube, whose solution we already know.
+	<h2> STEP 1 , Solve The Center 2x2 Blocks. </h2>
+	<img src="../images/4x4/center20.png" alt="center02" width="80" height="80" >
+	<p> In contrast to 3x3 cubes, whose center is fixed, we must pay special attention to the relative positions of center blocks. 
+	If the orientation of the center block orientation is wrong, you will not be able to solve the cube. 
+	Let's put the cube in the following way: <b>yellow top , white bottom , red front , orange back , green right  and blue left </b>.
+	If you are not sure of the orientation, place a solved 3x3 cube next to you for reference. </p>
+	<p>To solve the center block, we usually start with a 1x2 block first and then add another 1x2 block, 
+	without changing the  already solved center block.
+	The first 4 centers are usually easy.  If you encounter difficulties in the last two center blocks,, the following 2 formulas might help you.
+	 </p>
+	<div class="images3">
+	<figure> <img src="../images/4x4/center16.png" alt="center02" width="225" height="200" ><figcaption>  (r2' B r2 B)(r2' B2 r2)</figcaption> </figure> 
+	<figure> <img src="../images/4x4/center15x.png" alt="center02" width="225" height="200" ><figcaption> (r' U' r U')( r' U2' r)</figcaption> </figure> 
+	</div>
+	<p>
+	Note that since r2' = r2, you can interchange r2 and r2' in the first formulas as you wish. 
+	To solve a 4x4 cube, it is better to solve it in pairs (white-yellow) (red-orange) (green-blue), 
+	otherwise you can easily get confused about the relative positions of the  center middle blocks. 
+	And if you solve it in pairs, you do not need the second formula.
+	We included it just for fun, because it is almost identical to the formula for the counterclockwise fish pattern in a 3x3 cube. 
+	Just replace the R or R' with r or r'.</p>
+	
+	<b><a href="../animation/F44_center2.html">Animation: Fix the center</a> </b>
+		
+	<h2> STEP 2, Combining The Edges. </h2>
+	<p> This can be done in many ways, and there are also many formulas available on the Internet.
+	I learned this method recently, and it is (in my opinion) the best so far.
+	In this method we only need to remember one formula:
+	<center> <b> RUR'FR'F'R</b></center>
+	Let's call it edge color reversal formula.
+	<div class="images4">
+			<figure> <img src="../images/4x4/edge_rowA.png" alt="edge_rowA" width="150" height="150" >
+			<figcaption> Fig.2.1 </figcaption> </figure>
+		<figure> <img src="../images/4x4/edge_rowB.png" alt="edge_rowA" width="150" height="150" >
+			<figcaption> Fig.2.2 </figcaption> </figure>
+		<figure> <img src="../images/4x4/edge_same_row2.png" alt="edge_rowA" width="150" height="150" >
+			<figcaption> Fig.2.3 </figcaption> </figure>
+		<figure> <img src="../images/4x4/edge_same_row3.png" alt="edge_rowA" width="150" height="150" >
+			<figcaption> Fig.2.4 </figcaption> </figure>
+
+
+	</div>
+	<p>
+	For both situations in Fig 2.1 or Fig 2.2 apply formula: <center> <b> RUR'FR'F'R</b> </center> The cubes will change to the situations in Fig.2.3 or Fig 2.4.
+	For both situations in Fig 2.3 and Fig 2.4, apply the formula: <center> <b> u'(RUR'FR'F'R) u .</b> </center> </p>
+	 
+	<p> Using these methods we could solve all 12 edge blocks.Now the 4x4 cube is reduced to 3x3 and we could solve it using the same way to solve 3x3 cubes.</p>
+	
+	<b><a href="../animation/F44_combining_edges.html">Animation: Combining Edges</a> </b>
+	</p>
+			
+	<h2> STEP 3 SOLVE THE 4x4 CUBE AS IT IS A 3x3 CUBE </h2>
+	<p>Now we have the 4x4 cube with solved centers (2x2 blocks) and edges (1x2 blocks). We can solve it just like a 3x3 cube.
+	There are, however, situations that will never arise in a 3x3 cube. </p>
+	<h2> SPECIAL CASES IN 4x4 CUBE </h3>
+	<div class="images3">
+	<figure> <img src="../images/4x4/yellow_cross.png" alt="yellow cross" width="150" height="150" ><figcaption> Fig.3.1 Yellow Cross </figcaption> </figure>
+	<figure> <img src="../images/4x4/F44sp2.png" alt="exchange two edges" width="150" height="150" ><figcaption> Fig.3.2 Two Edges</figcaption> </figure>
+	</div>
+	<h3>(a) We can not make a yellow cross on the upper layer in step3 of the 3x3 cube using formula FURR'U'F' (Fig.3.1) </h3> 
+	<p>The following formula will solve this situation(Fig.3.1).</p>
+	<div class="formula">(r U2) x (r U2) (r U2) (r' U2) (l U2) (r' U2) (r U2) (r' U2 ) r'</div>
+	<h3>(b) We may need to exchange two and only two edges in the last step (Fig.3.2)</h3>
+	<p>Unlike a 3x3 cube, here in the last step, we may need to solve two and only two edges (Fig.3.2). 
+	 Let Q be the second layer beside R (Q is not a standard notation), the following simple formula 
+	 will solve the cube or bring the cube to a familar 3x3 cube case. </p>
+	<div class="formula"> Q2 U2 Q2 u2 Q2 u2 </div>   
+	<b><a href="../animation/F44_special_cases.html"> Special Cases in 4x4 cubes</a> </b>
+	<br>
+	<p><b>Now you have solved the 4x4 Rubik's Cube. Enjoy! </b></p>
+		
+	</body>
+</html>

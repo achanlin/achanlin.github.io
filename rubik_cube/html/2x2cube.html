@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> 2x2 cube</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	</head>
+
+	<body>
+	<h1>Rubik's Cube, a Dream From Your Childhood</h1>
+	<div >
+		<a href="../index.html"> HOME</a>&nbsp&nbsp
+		<a href="../html/introduction.html"> INTRODUCTION</a> &nbsp&nbsp
+		<a href="../html/2x2cube.html">2x2 CUBE</a>&nbsp&nbsp
+		<a href="../html/3x3cube.html">3x3 CUBE</a>&nbsp&nbsp
+		<a href="../html/4x4cube.html">4x4 CUBE</a>&nbsp&nbsp
+		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
+		<a href="../html/contact.html"> CONTACT</a>&nbsp&nbsp
+	</div>
+
+	<image src="../images/2x2/cube22_00.png" style="float: right; width="250" height="250">
+	<p> The original Rubik's Cube is a 3x3 cube. So I think that you either already know how to solve a 3x3 cube
+	or you will learn how to solve a 3x3 cube, but you start here thinking that a 2x2 cube is easier. <br>
+	If you already know how to solve a classic 3x3 Rubik's Cube, then you will also know how to solve a 2x2 if you realize that
+	</p>
+	<p class="cc">A 2x2 cube is a 3x3 cube with only corners! </p>
+	<p> If you do not know how to solve a 3x3 cube, I suggest you start from there. 
+	However, if you just want to know how to solve a 2x2 cube and do not care about the 3x3 cube,
+	follow the steps below and you will be able to solve it in no time.</p>
+	<h2>STEP1: SOLVE THE WHITE LAYER </h2>
+	<div class="images3">
+	<figure>
+	<img src="../images/2x2/cube22_01.png" alt="" width="150" height="150">
+	<figcaption> solved white layer</figcaption></figure>
+	<figure>
+	<img src="../images/2x2/cube22_02.png" alt="" width="150" height="150">
+	<figcaption> unsolved white layer</figcaption></figure>
+	<figure>
+	<img src="../images/2x2/cube22_03.png" alt="" width="150" height="150">
+	<figcaption> bottom white layer solved</figcaption></figure>
+	</div>
+	<p>
+	Our first step is to make the white layer, but not only that. We also have to make sure that 
+	the colors on the sides are correct. We do not need any formula for this step. Just practice and you will find the way.
+	</p>
+	<p>Now we rotate the cube 180 degrees so that the white layer is at the bottom.  </p>
+	
+	
+	<h2>STEP2: MAKE THE UPPER LAYER ALL YELLOW</h2>
+		
+	<h3> (a) There are 3 non-yellow color on the upper layer (Fig. 4a and Fig. 4b)</h3>
+	<p>	We call these situations fish patterns (name adapted from similar situations in the 3x3 cube). 
+	In this case, on the upper layer, there is one yellow color, and the other three colors are not right. 
+	Let's turn the cube left or right so that the yellow color is on a back-right or back-left position and make sure that
+	<b>there is a yellow color on the back-layer</b>. <br>
+	If the yellow color on the upper layer is on the <b>left corner </b> we call it a counterclockwise fish pattern.<br> 
+	If the yellow color on the upper layer is on the <b>right corner </b>we call it clockwise fish pattern.</p>
+	
+	<div class="images4">
+	<figure> <img src="../images/2x2/cube22_03.png" alt="a clockwise fish" width="150" height="150" >
+			 <figcaption> Fig.2a counterclockwise fish </figcaption> </figure>
+	<figure> <img src="../images/2x2/cube22_04.png" alt="a counter clockwise fish" width="150" height="150" >
+			 <figcaption> Fib.2b closewise fish</figcaption> </figure>
+	<figure> <img src="../images/2x2/cube22_06.png" alt="4 color wrong" width="150" height="150" >
+			 <figcaption> Fig.2c two wrong colors </figcaption> </figure>		 
+	<figure> <img src="../images/2x2/cube22_05.png" alt="two wrong colors" width="150" height="150" >
+			 <figcaption> Fig.2d four wrong colors </figcaption> </figure>
+	</div>	
+	<p>For the counter-clockwise fish pattern, we can solve it by using formula: <div class="formula"> R' U' R U' R' U'2 R </div> <br>
+	For the clockwise fish pattern, we can solve it by using formula:	<div class="formula" >L U L' U L U2 L' </div><br>
+ 	Then all the colors on the top layer will be yellow. Note that the two formulas are mirror images of each other.</p>
+	<a href="../animation/F22_fish_cw_ccw.html">Animation: Fish Patterns </a> 
+	
+	<h3>(b) There are 2 or 4 non-yellow color on the upper layer (Fig.2c and Fig.2d)</h3>
+	<p> In this case, we will still use the two formulas above, but we need to use them more than once.
+	If there are <span style="color: brown"> <b> two </span></b>cubies whose colors are not right, 
+	we turn the cube so that the color at the <span style="color: brown"> <b>back of the left-back corner </b></span>cubie is yellow;
+	if there are <span style="color:brown"><b> four</b></span> cubies whose colors are not right, 
+	we turn the cube so that the color at the <span style="color: brown"><b>left of the left-back corner </b></span>cubie is yellow.
+	After placing the cube in a correct initial condition, we apply the <b> counter-clockwise </b> fish formula, 
+	then the cube will show one of the fish patterns as discribed in (a).</P>
+	
+	<p>From the formula above, we see that to solve the counterclockwise fish situation, the upper layer is always turning counterclockwise. 
+	That's why we call it counter-clockwise fish. Likewise,to solve the clockwish fish situation, the upper layer is always turning clockwise.</p>
+
+	<h2>STEP3: REARRANGE THE UPPER LAYER'S CORNER PEICES</h2>
+	
+	<p>Here we have two cases: <br>
+	<div class="images2">
+	<figure> <img src="../images/2x2/cube22_07.png" alt="2 corner colors same" width="150" height="150" >
+			 <figcaption> Fig.3a </figcaption> </figure>
+	<figure> <img src="../images/2x2/cube22_08.png" alt="2 corner colors diferent" width="150" height="150" >
+			 <figcaption> Fig.3b</figcaption> </figure>		 
+	</div>
+	
+	<h3>(a) There is a side whose two corner pieces have same color on the side (Fig.3a) </h3>
+	<p>In this case (Fig. 5a), we need to place the side whose two corner pieces have the same color <b> on the right side </b>and 
+	<b>make the yellow layer the front layer (the one facing us)</b> then we apply the following formula: R2D2.</p>
+	<div class="formula"> R2 D2 R' U' R D2 R' U R' </div> </p>
+	<p>
+	<h3>(b) We could not find a side whose two corners have the same color(Fig.3b)</h3>
+	<p>In this situation (Fig. 3b), it does not matter which side is on the right, but <b>we still need to rotate the cube so the yellow layer is the front layer. </b>. 
+	We then apply the same R2D2 formula, we will be able to find a side whose two corner pieces are the same color. </p>
+
+	<a href="../animation/F22_R2D2.html">R2D2 </a> 
+	<br>
+	<br>
+	<p>That's it. You have solve the 2x2 Rubik's cube. <b> Have fun!</b></p>
+		
+   </body>
+</html>

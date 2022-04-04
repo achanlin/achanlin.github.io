@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> 5x5 cube</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	</head>
+	<body>
+		<h1>Rubik's Cube, a Dream From Your Childhood</h1>
+	<div >
+		<a href="../index.html"> HOME</a>&nbsp&nbsp
+		<a href="../html/introduction.html"> INTRODUCTION</a> &nbsp&nbsp
+		<a href="../html/2x2cube.html">2x2 CUBE</a>&nbsp&nbsp
+		<a href="../html/3x3cube.html">3x3 CUBE</a>&nbsp&nbsp
+		<a href="../html/4x4cube.html">4x4 CUBE</a>&nbsp&nbsp
+		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
+		<a href="../html/contact.html"> CONTACT</a>&nbsp&nbsp
+	</div>	
+	<p> 	<img src="../images/5x5/cube55_01.png" style="float:right;width:200px;height:200px";>
+	A 5x5 Rubik's Cube is also called a Professor's Cube. So if you can solve a 5x5 Rubik's Cube, you are a professor! 
+	It must be very difficult. Actually it is not. 
+	Similar to a 4x4 cube we solve a 5x5 cube by reducing it down into a 3x3 cube, 
+and there are no special cases. Some people believe that it is even easier than a 4x4. </p>
+	<h2> STEP 1: Fix The Center 3x3 Blocks. </h2>
+	<p>The first step is to fix the six 3x3 center blocks. Just like a 3x3 cube, the relative positions of the 3x3 center blocks are determined by the center piece on each side. So for this part, it is easier than a  4x4 cubes.
+	We can solve the center block using similar methods as the 4x4 cube.<br> For each 3x3 center block, we usually get the center 1x3 block first and then  add the two other 1x3 blocks.
+	</p>
+	<div class="images5">
+	<figure> <img src="../images/5x5/cube55_center1.png" alt="center02" width="100" height="100" ><figcaption> </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_center2.png" alt="center02" width="100" height="100" ><figcaption>  </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_center3.png" alt="center02" width="100" height="100" ><figcaption>  </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_02.png" alt="center02" width="100" height="100" ><figcaption>  </figcaption> </figure> 
+	</div>
+	<p>The first few centers are always easier. The last two centers may be a little difficult. The following formulas might help you. </p>
+	<div class="images4">
+	<figure> <img src="../images/5x5/cube55_center6.png" alt="center02" width="170" height="150" > <figcaption>Fig.a: (r2'Br2Br2'B2r2)</figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_center6z.png" alt="center02" width="170" height="150" ><figcaption>Fig.b: (r2'Br2)</figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_center6y.png" alt="center02" width="170" height="150" ><figcaption>Fig.c: (r2'Br2Br2'B2r2)</figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_center5x.png" alt="center02" width="170" height="150" ><figcaption>Fig.d: (r'U'rU'r'U'2r)</figcaption> </figure> 
+	</div>
+	<b> <a href="../animation/F55_center_blocks.html"> Fix the center blocks</a> </b> 
+	<p>
+	Note that since r2' = r2, you can interchange r2 and r2' in the first three formulas as you wish. 
+	We can solve a 5x5 cube center blocks the same way as we solve a 4x4 cube, i.e., we 
+	solve it in pairs (white-yellow) (red-orange) (green-blue). And if you proceed in this way, you do not need the last formula. 
+	We included it just for fun, because it is almost identical to the formula for the counterclockwise fish pattern in a 3x3 cube. Just replace the R or R' with r or r'. </p>
+	<p>
+	For situation a, that is: we need to replace only one piece and this piece is not the center of the 1x3 block. 
+	Place the cube exactly as in Fig.a, then we can apply the formula: <b>r2'Br2Br2'B2r2 </b>. </p>
+	<p>
+	For situation b, that is: we need to replace one piece and this piece is the center of the 1x3 blocks of the last two unsolved center blcoks. 
+	Place the two 1x3 blocks exactly as in Fig.b, then simply apply <b>r2'B r2</b>, the cube will looks similiar to Fig.a. </p>
+	<p>
+	For situation c, that is.: the centers of the 1x3 block of the last two unsolved centers are correct, but the other two are wrong, 
+	apply the same formula <b>r2'Br2Br2'B2r2</b>, the cube will be in a situation similar to fig.a.</p>
+		
+	<h2> STEP 2: Combining The Edges. </h2>
+	<p><img src="../images/5x5/cube55_03.png" style="float:left;width:150px;height:150px; margin-right: 100px" >
+	Combining edges is time consuming, but intuitive. It is similar to solving 4x4. We will still rely heavily on the formula we learned in 4x4 cube:
+ <center> <b>RUR'FR'F'R</b></center> </p>
+	<p>For each side there are three edges. We call the one in the third row the inner edge, the other two outer edges.
+	The edge color reversal formula leaves the inner edge in the same position, but swaps the position of the two outer edges,
+	while the colors of each piece in the edge block are swapped.
+	Now let us put the inner edge to the right and the outer edges to the left.</p>  
+	<div class="images4">
+	<figure> <img src="../images/5x5/cube55_edge1b.png" alt="center02" width="150" height="150" ><figcaption> u'(RUR'FR'F'R)u &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge1c.png" alt="center02" width="150" height="150" ><figcaption>  </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge1a.png" alt="center02" width="150" height="150" ><figcaption> 3U'(RUR'FR'F'R)3U  &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge1c.png" alt="center02" width="150" height="150" ><figcaption>  </figcaption> </figure> 
+	</div>
+	<div class="images4">
+	<figure> <img src="../images/5x5/cube55_edge7a.png" alt="center02" width="150" height="150" ><figcaption> d(RUR'FR'F'R)d' &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge7b.png" alt="center02" width="150" height="150" ><figcaption>  </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge8a.png" alt="center02" width="150" height="150" ><figcaption> 3D(RUR'FR'F'R)3D' &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge8b.png" alt="center02" width="150" height="150" ><figcaption>  </figcaption> </figure> 
+	</div>
+	<p> In the following 3U means: we turn three layers (U and the other two layers below it) together in the same direction of U. 
+	The idea is same for 3U' or 3R'.</p>
+	<p>
+	After we have paired the twe edges together which including the inner edge, we put that on the right side and put the single one on the left.</P>
+	<div class="images3">
+	<figure> <img src="../images/5x5/cube55_edge2a.png" alt="center02" width="150" height="150" ><figcaption> RUR'FR'F'R &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge2b.png" alt="center02" width="150" height="150" ><figcaption> 3U'(RUR'FR'F'R)3U&#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge2c.png" alt="center02" width="150" height="150" ><figcaption> </figcaption> </figure> 
+	</div><br>
+		
+	<div class="images3">
+	<figure> <img src="../images/5x5/cube55_edge3a.png" alt="center02" width="150" height="150" ><figcaption> RUR'FR'F'R &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge3b.png" alt="center02" width="150" height="150" ><figcaption> 3D(RUR'FR'F'R)3D' &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge3c.png" alt="center02" width="150" height="150" ><figcaption>  </figcaption> </figure> 
+	</div><br>
+	<div class="images3">
+	<figure> <img src="../images/5x5/cube55_edge4a.png" alt="center02" width="150" height="150" ><figcaption> RUR'FR'F'R &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge4b.png" alt="center02" width="150" height="150" ><figcaption> u'( RUR'FR'F'R) u &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge4c.png" alt="center02" width="150" height="150" ><figcaption>  </figcaption> </figure> 
+	</div><br>
+	<div class="images3">
+	<figure> <img src="../images/5x5/cube55_edge5a.png" alt="center02" width="150" height="150" ><figcaption> RUR'FR'F'R &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge5b.png" alt="center02" width="150" height="150" ><figcaption> d(RUR'FR'F'R)d' &#8594 </figcaption> </figure> 
+	<figure> <img src="../images/5x5/cube55_edge3c.png" alt="center02" width="150" height="150" ><figcaption>  </figcaption> </figure> 
+	</div>	
+	
+	<p>We could solve most of the edges using the above formulas.</p>
+	<b> <a href="../animation/F55_combining_edges.html"> Animation: Combining edges </a> </b> </p>
+	
+	<h3>THE LAST UNSOLVED EDGE </h3>
+	<p>With these formulas, we can combine the edges block by block. If you are lucky, you can solve all 12 edge blocks. 
+	But it may happen that the last edge block cannot be solved with the above method. We must deal with it on its own. 
+	If you manoeuvre the cube with the above formula, the last unsolved edge block can always look like on the picture below
+	which can be solved with the following formula</p>
+	 <img class="mid" src="../images/5x5/cube55_10.png" style="width:150px;height:150px";>
+	 &nbsp&nbsp <b> <a href="../animation/F55_last_edge_block.html"> (rU2) x (rU2) (rU2) (r'U2) (lU2) M (r'U2) (rU2) (r'U2) r'</a> </b> 
+	 <p>Notice that this is very similar to the 4x4 special case formula except an M after lU2. In the practice Mr'=3R', 
+	 hence, M(r'U2) means we move three layers on the right hand side together, in direction R', then U2. 
+	 x means rotate the entire tube 90 degree away from you. </p>
+				 
+	<h2> STEP 3: SOLVE THE 5x5 CUBE AS IT IS A 3x3 CUBE </h2>
+	<p>Now we have the 5x5 cube with solved centers (3x3 blocks) and edges (1x3 blocks). We can solve it just like a 3x3 cube.
+	It's done! </p>
+	<p><b> Now you have solved the 5x5 Rubik's Cube. Enjoy!</b></p>
+	
+	
+	
+	</body>
+</html>
