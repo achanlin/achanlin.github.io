@@ -1,3 +1,36 @@
+body {
+	
+  background-color: #f5efbd;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  -webkit-text-size-adjust: none;
+  color: #333;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#control {
+	position: relative;
+	top: 3px;
+	left: 70px;
+	text-align: left;
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+	
+	
+}
+#center {
+	position: relative;
+	top: 3px;
+	left: 70px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	
+	
+}
+
 .cube {
 	-webkit-perspective: 2400px;
 	   -moz-perspective: 2400px;
