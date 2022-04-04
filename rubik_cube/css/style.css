@@ -3,6 +3,9 @@ section, footer, nav {
 }
 
 body {
+
+  background-color: #f5efbd;
+
   font-family: 'Helvetica Neue', Arial, sans-serif;
   -webkit-text-size-adjust: none;
   color: #333;
