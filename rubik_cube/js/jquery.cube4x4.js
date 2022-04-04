@@ -1100,11 +1100,12 @@ $.fn.cube = function(options){
 				});
 
 				break;
-		case "Q":
-			var from = getCubits("x", 2);
-                var to = generateToArray(from, "cw");
+				
+			case "Q":
+                var from = getCubits("x", 2);
+                var to = generateToArray(from, "ccw");
 
-                _ref.data("from", from);
+				_ref.data("from", from);
 				_ref.data("to", to);
 
 				$(from).each(function(){
@@ -1113,9 +1114,28 @@ $.fn.cube = function(options){
 				});
 
 				break;
+
+            case "Q'":
+				var from = getCubits("x", 2);
+                var to = generateToArray(from, "cw");
+
+                _ref.data("from", from);
+				_ref.data("to", to);
+
+				$(from).each(function(){
+					var pos = $(this).data("pos");
+					pos.ox = -90;
+				});
+
+				break;
+
+		 
             default:
                 return;
 		}
+		
+		
+		
 
         positionCubits(from, true);
 	}
@@ -1206,6 +1226,7 @@ $.fn.cube = function(options){
                         transform: "translateZ(" + (-(options.cubit.width/2)) + "px) rotateY(180deg)"
                     })
                     break;
+					
 
                 case 3:
                     face.css({

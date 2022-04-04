@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Jason Graves (GodLikeMouse/Collaboradev)
+1845******- * Copyright 2015 Jason Graves (GodLikeMouse/Collaboradev)
  * http://www.collaboradev.com
  *
  * This file is part of jquery.cube.js.
@@ -842,20 +842,6 @@ $.fn.cube = function(options){
 
 				break;
 
-            case "E'":
-				var from = getCubits("y", 1);
-                var to = generateToArray(from, "cw");
-
-                _ref.data("from", from);
-				_ref.data("to", to);
-
-				$(from).each(function(){
-					var pos = $(this).data("pos");
-					pos.oy = -90;
-				});
-
-				break;
-
             case "E":
 				var from = getCubits("y", 1);
                 var to = generateToArray(from, "ccw");
@@ -866,6 +852,20 @@ $.fn.cube = function(options){
 				$(from).each(function(){
 					var pos = $(this).data("pos");
 					pos.oy = 90;
+				});
+
+				break;
+
+            case "E'":
+				var from = getCubits("y", 1);
+                var to = generateToArray(from, "cw");
+
+                _ref.data("from", from);
+				_ref.data("to", to);
+
+				$(from).each(function(){
+					var pos = $(this).data("pos");
+					pos.oy = -90;
 				});
 
 				break;

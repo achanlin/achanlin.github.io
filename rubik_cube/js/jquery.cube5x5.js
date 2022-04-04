@@ -84,7 +84,7 @@ $.fn.cube = function(options){
             var move = m[i];
 
             //sanity check max length
-            if(move.length == 0 || move.length > 3)
+            if(move.length == 0 || move.length > 5)
                 continue;
 
             //sanity check move notation
@@ -125,7 +125,7 @@ $.fn.cube = function(options){
 
         var index = 0;
         var length = cubits.length;
-
+	
         $(cubits).each(function(){
             var cubit = $(this);
             var pos = cubit.data("pos");
@@ -236,14 +236,14 @@ $.fn.cube = function(options){
 
     //method for retrieving cubits by layer
     //specifying plane x, y, z
-    //and depth 0, 1, 2
+    //and depth 0, 1, 2, 3,4
     //for example:
     // U layer is
     //      plane: y
     //      depth: 0
     // R layer is
     //      plane: x
-    //      depth: 2
+    //      depth: 5
     // B layer is
     //      plane: z
     //      depth: 0
@@ -296,11 +296,11 @@ $.fn.cube = function(options){
                 switch(depth){
                   case 0:
                         return [
-                            _cube[20].get(0),  _cube[15].get(0),  _cube[10].get(0),  _cube[5].get(0),  _cube[0].get(0),
-                            _cube[45].get(0), _cube[40].get(0), _cube[35].get(0), _cube[30].get(0), _cube[25].get(0),
-                            _cube[70].get(0), _cube[65].get(0), _cube[60].get(0), _cube[55].get(0), _cube[50].get(0),
-							_cube[95].get(0), _cube[90].get(0), _cube[85].get(0), _cube[80].get(0), _cube[75].get(0),
-							_cube[120].get(0), _cube[115].get(0), _cube[110].get(0), _cube[105].get(0), _cube[100].get(0)
+                            _cube[20].get(0),  _cube[15].get(0),  _cube[10].get(0),   _cube[5].get(0),   _cube[0].get(0),
+                            _cube[45].get(0), _cube[40].get(0),   _cube[35].get(0),   _cube[30].get(0),  _cube[25].get(0),
+                            _cube[70].get(0), _cube[65].get(0),   _cube[60].get(0),   _cube[55].get(0),  _cube[50].get(0),
+							_cube[95].get(0), _cube[90].get(0),   _cube[85].get(0),   _cube[80].get(0),  _cube[75].get(0),
+							_cube[120].get(0), _cube[115].get(0), _cube[110].get(0),  _cube[105].get(0), _cube[100].get(0)
                         ];
                     case 1:
                         return [
@@ -1032,10 +1032,10 @@ $.fn.cube = function(options){
 				var t1 = generateToArray(f1, "cw");
                 var t2 = generateToArray(f2, "cw");
                 var t3 = generateToArray(f3, "cw");
-				var t4 = generateToArray(f4, "cw");
-                var to = t0.concat(t1).concat(t2).concat(t3).concat(f4);
-
-                _ref.data("from", from);
+			    var t4 = generateToArray(f4, "cw");
+	   			var to = t0.concat(t1).concat(t2).concat(t3).concat(t4);
+				
+	            _ref.data("from", from);
 				_ref.data("to", to);
 
 				$(from).each(function(){
@@ -1058,7 +1058,7 @@ $.fn.cube = function(options){
                 var t2 = generateToArray(f2, "ccw");
                 var t3 = generateToArray(f3, "ccw");
 				var t4 = generateToArray(f4, "ccw");
-                var to = t0.concat(t1).concat(t2).concat(t3).concat(f4);
+                var to = t0.concat(t1).concat(t2).concat(t3).concat(t4);
 
                 _ref.data("from", from);
 				_ref.data("to", to);
@@ -1083,7 +1083,7 @@ $.fn.cube = function(options){
                 var t2 = generateToArray(f2, "cw");
                 var t3 = generateToArray(f3, "cw");
 				var t4 = generateToArray(f4, "cw");
-                var to = t0.concat(t1).concat(t2).concat(t3).concat(f4);
+                var to = t0.concat(t1).concat(t2).concat(t3).concat(t4);
 
                 _ref.data("from", from);
 				_ref.data("to", to);
@@ -1108,7 +1108,7 @@ $.fn.cube = function(options){
                 var t2 = generateToArray(f2, "ccw");
                 var t3 = generateToArray(f3, "ccw");
 				var t4 = generateToArray(f4, "ccw");
-                var to = t0.concat(t1).concat(t2).concat(t3).concat(f4);
+                var to = t0.concat(t1).concat(t2).concat(t3).concat(t4);
 
                 _ref.data("from", from);
 				_ref.data("to", to);
@@ -1229,6 +1229,7 @@ $.fn.cube = function(options){
                         transform: "rotateX(90deg) rotateY(180deg)"
                     })
                     break;
+					
 
             }
 
