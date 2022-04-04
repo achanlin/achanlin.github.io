@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cube22R2D2</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+
+<body>
+
+
+<div id="control">
+	<p>
+        <input type="button" value="L">
+        <input type="button" value="R">
+        <input type="button" value="B">
+        <input type="button" value="F">
+		<input type="button" value="U">
+		<input type="button" value="D">
+		<input type="button" value="L'">
+        <input type="button" value="R'">
+        <input type="button" value="B'">
+        <input type="button" value="F'">
+		<input type="button" value="U'">
+		<input type="button" value="D'">
+	</p>
+	<p>	
+	    <input type="button" value="x">
+		<input type="button" value="y">
+		<input type="button" value="z">
+		<input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'">		
+	</p>
+</div>
+<div class="cube"></div>
+<input type="button" id="ini" value="press me first" name="x' R2 D2 R' U' R D2 R' U R' x y'" onClick="getInitialStatus()">	
+<br>
+<br>			
+
+<input type="button" id="run" value="x' R2 D2 R' U' R D2 R' U R' x" onClick="runContinuously()">	
+<br>
+<p>Notice that in the formula, I added x' so the yellow top layer will rotate to the front, facing us.<br> 
+After applying the R2D2 formula, I added x so we rotate the yellow face to the top layer again.</p>
+<script src = "../js/jquery-3.1.1.min.js"></script>
+<script src = "../js/jquery.cube2x2.js"></script>
+<script src = "../js/animation.js"></script>
+
+</body>
+</html>
