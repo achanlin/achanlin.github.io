@@ -1,29 +1,144 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-	<head>
-	<title> Rubik's cube, a dream from your childhood</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	<style>
-	.cc{
-	font-weight: bold;
-	text-align: center;}
-	</style>
-	</head>
-	<body>
-	<h1>Rubik's Cube, a Dream From Your Childhood</h1>
+<head>
+<title>Movement3x3</title>
+<link rel="stylesheet"  href="./css/jquery.cube.css"></link>  
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}	
+.column {
+  float: left;
+  padding: 10px;
+ 
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+
+<h1>Rubik's Cube, a Dream From Your Childhood</h1>
 	<div >
 		<a href="index.html"> HOME</a>&nbsp&nbsp
-		<a href="html/introduction.html"> INTRODUCTION</a> &nbsp&nbsp
 		<a href="html/2x2cube.html">2x2 CUBE</a>&nbsp&nbsp
 		<a href="html/3x3cube.html">3x3 CUBE</a>&nbsp&nbsp
 		<a href="html/4x4cube.html">4x4 CUBE</a>&nbsp&nbsp
 		<a href="html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
+	</div>
+
+	
+<div class="row">
+  <div class="column left" >
+    <h2>Basic Concept</h2>
+   	<p>
+	Each Rubik's Cube consists of 26 small cubies (why not 27=3x3x3?) 
+	These small cubies can be divided into three groups </p>
+	<p>
+	(1) 6 <b>center</b>s: For each center piece, we see only one side, the other five sides are hidden.<br>
+	(2) 12      <b>edge</b>s:  For each edge piece, we see only two sides, the other four sides are hidden. <br>
+	(3) 8 <b>corner</b>s: For each corner, we see only three sides, the other three sides are hidden. </p>
+	<p>
+	It does not matter what you do, the centers will always be centers, 
+	the edges will always be edges, and the corners will always be corners.</p>
 		
+	
+	<h3> The basic notations used in this website </h3>	
+	<p>	Each cube has six sides. They are:
+	<br><b>L</b>: left side;
+	<br><b>R</b>: right side;
+	<br><b>D</b>: down side; 
+	<br><b>U</b>: upper side;
+	<br><b>F</b>: front side; 
+	<br><b>B</b>: back side; </p>
+	<p> There are two directions: <b>clockwise</b> and <b>counter clockwise</b>. 
+		For example, <b>R</b> denotes clockwise, <b>R'</b> denotes counterclockwise.</p>
+	<p>There are also three hidden layers:
+	<br><b>M</b> – Middle layer  – between left and right. 
+	<br><b>E</b> – Equatorial layer – between down and up. 
+	<br><b>S</b> – Standing layer – between front and back.
+	</p>
+	
+	<p>Other than these sides/layers, there are also axes: x, y, z. </p>
+	<p>All the movements are demonstrated on the left.</p>
+	
+	<p> Sometimes we will move two layers together, which will be deonted by a lowercase letter. And if we see a number 2 following
+	a letter, that means we do the same movement twice. For example <b>R2</b> is equal to <b>RR</b> and <b>R2'</b> or <b>R'2</b>, is equal to <b>R'R'</b>. 
+	</p>
+		
+  </div>
+  <div class="column right" >
+    <h2>Cubic Algorithm Symbols</h2>
+	<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="l">
+		<input type="button" value="R'">
+	    <input type="button" value="r'">	
+		<input type="button" value="M">
+		<input type="button" value="x'"> 
+		<input type="button" value="L'">
+		<input type="button" value="l'">
+        <input type="button" value="R">
+		<input type="button" value="r">
+	    <input type="button" value="M'">
+	    <input type="button" value="x">
+		</p><P>	
+		<input type="button" value="D">
+		<input type="button" value="d">
+		<input type="button" value="U'">
+		<input type="button" value="u'">
+		<input type="button" value="E">
+		<input type="button" value="y'"> 
+		<input type="button" value="D'">
+		<input type="button" value="d'">	
+		<input type="button" value="U">
+		<input type="button" value="u">
+		<input type="button" value="E'">		
+		<input type="button" value="y">	
+		</p><p>
+		<input type="button" value="F">
+	    <input type="button" value="f">
+	    <input type="button" value="B'">
+	    <input type="button" value="b'">
+	    <input type="button" value="S">	
+		<input type="button" value="z'">		
+		<input type="button" value="F'">
+		<input type="button" value="f'">
+        <input type="button" value="B">
+        <input type="button" value="b">
+		<input type="button" value="S'">
+		<input type="button" value="z">
+		</p>
+	</div>	
+
+	<div class="cube"></div>
+		<h3> Clockwise and Counter Clockwise</h3>
+		<p>
+		<img src="./images/up.jpg" alt="Rubik's cube" style="float:left; margin-right: 20px;  width:80px;height:140px;"> 
+		<img src="./images/right.jpg" alt="Rubik's cube" style="float:left;padding:20px; width:150px;height:80px;">
+		<p> Make a "thumb-up" with your right hand, put it on any side of the cube, thumb away from that side, 
+		the direction of the other four fingers is counter-clockwise. For example, the two images on the left shows 
+		<b>U'</b> and <b> R'</b> </p> 
+		<p> Make a "thumb-up" with your left hand, put it on any side of the cube, thumb away from that side, 
+		the direction of the other four fingers is clockwise. </p> 
 	</div>
-	<div>
-	<img src="./images/3x3/cube.png" alt="Rubik's cube" style="float:right;width:350px;height:350px;">
-	</div>
-		<p> The Rubik's Cube is a 3-D combination puzzle invented in 1974 by Hungarian sculptor and 
+  </div>
+  <div>	
+	   <p> The Rubik's Cube is a 3-D combination puzzle invented in 1974 by Hungarian sculptor and 
 		professor of architecture <a href="https://en.wikipedia.org/wiki/Ern%C5%91_Rubik" >Erno Rubik </a>, originally called the Magic Cube.
 		Do you know in how many ways we could arrange the cube? </p>
 		<p class="cc" >43,252,003,027,486,856,000</p>
@@ -45,5 +160,13 @@
 		<p>The animations in the website are adpated from 
 	<a href="http://collaboradev.com/2015/06/10/new-rubiks-cube-jquery-plugin/"> Jason Graves</a>. <br> <br>
 	</p>	
-	</body>
+  </div>
+  
+  <script src = "./js/jquery-3.1.1.min.js"></script>
+  <script src = "./js/jquery.cube.min.js"></script> 
+  <script src = "./js/jquery.cube3x3.js"></script>
+  <script src = "./js/animation.js"></script>
+
+
+</body>
 </html>
