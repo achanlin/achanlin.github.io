@@ -55,7 +55,7 @@ $.fn.cube = function(options){
     //method for parsing moves string into individual moves
     function parse(moves){
 
-        var allowed = ["U","u","R","r","D","d","L","l","F","f","B","b","M","E","S","X","Y","Z","2","'"];
+        var allowed = ["U","u","R","r","D","d","L","l","F","f","B","b","M","E","S","X","Y","Z","2","'","H", "I", "J", "K"];
 
         //clean unnecessary moves
         moves = moves
@@ -913,7 +913,7 @@ $.fn.cube = function(options){
 
 				break;
 
-            case "E":
+            case "E'":
 				var from = getCubits("y", 2);
                 var to = generateToArray(from, "cw");
 
@@ -927,7 +927,7 @@ $.fn.cube = function(options){
 
 				break;
 
-            case "E'":
+            case "E":
 				var from = getCubits("y", 2);
                 var to = generateToArray(from, "ccw");
 
@@ -1120,6 +1120,93 @@ $.fn.cube = function(options){
 
 				break;
 
+		case "H":
+				var f1 = getCubits("y", 4);
+                var f2 = getCubits("y", 3);
+                var f3 = getCubits("y", 2);
+		        var from = f1.concat(f2).concat(f3);
+				
+				var t1 = generateToArray(f1, "ccw");
+                var t2 = generateToArray(f2, "ccw");
+                var t3 = generateToArray(f3, "ccw");
+	            var to = t1.concat(t2).concat(t3);
+				
+				_ref.data("from", from);
+				_ref.data("to", to);
+
+				$(from).each(function(){
+					var pos = $(this).data("pos");
+					pos.oy = 90;
+				});
+
+				break;
+  
+
+        case "I":
+				var f1 = getCubits("y", 4);
+                var f2 = getCubits("y", 3);
+				var f3 = getCubits("y", 2);
+                var from = f1.concat(f2).concat(f3);
+
+                var t1 = generateToArray(f1, "cw");
+                var t2 = generateToArray(f2, "cw");
+				var t3 = generateToArray(f3, "cw");
+				
+                var to = t1.concat(t2).concat(t3);
+
+                _ref.data("from", from);
+				_ref.data("to", to);
+
+				$(from).each(function(){
+					var pos = $(this).data("pos");
+					pos.oy = -90;
+				});
+
+				break;
+				
+				
+		case "J":
+                var f1 = getCubits("y", 0);
+                var f2 = getCubits("y", 1);
+				var f3 = getCubits("y", 2);
+                var from = f1.concat(f2).concat(f3);
+
+				var t1 = generateToArray(f1, "cw")
+                var t2 = generateToArray(f2, "cw");
+				var t3 = generateToArray(f3, "cw");
+                var to = t1.concat(t2).concat(t3);
+
+                _ref.data("from", from);
+				_ref.data("to", to);
+
+				$(from).each(function(){
+					var pos = $(this).data("pos");
+					pos.oy = -90;
+				});
+
+				break;
+
+        case "K":
+				var f1 = getCubits("y", 0);
+                var f2 = getCubits("y", 1);
+				var f3 = getCubits("y", 2);
+                var from = f1.concat(f2).concat(f3);
+
+                var t1 = generateToArray(f1, "ccw");
+                var t2 = generateToArray(f2, "ccw");
+				var t3 = generateToArray(f3, "ccw");
+                var to = t1.concat(t2).concat(t3);
+
+                _ref.data("from", from);
+				_ref.data("to", to);
+
+				$(from).each(function(){
+					var pos = $(this).data("pos");
+					pos.oy = 90;
+				});
+
+				break;		
+				
             default:
                 return;
 		}
