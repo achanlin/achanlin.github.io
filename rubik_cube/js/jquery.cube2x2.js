@@ -28,8 +28,8 @@ $.fn.cube = function(options){
 			oy: 0,
 		},
 		size: {
-			width: 150,
-			height: 150
+			width: 250,
+			height: 250
 		},
 		color: [
 			"red", //front
