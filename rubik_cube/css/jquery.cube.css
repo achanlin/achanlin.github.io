@@ -20,7 +20,7 @@ body {
 	
 	
 }
-#control0 {
+#control {
 	position: relative;
 	top: 3px;
 	text-align: left;
@@ -154,7 +154,4 @@ body {
 }
 
 
-/* CSS */
-button:active{
-   background-color:red;
-}
+
