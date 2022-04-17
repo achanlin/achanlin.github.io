@@ -4,18 +4,42 @@
 	<title> 2x2 cube</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
 	</head>
+<style>
+* {
+  box-sizing: border-box;
+}	
+.column {
+  float: left;
+  padding: 10px;
+ 
+}
 
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 	<body>
 	<h1>Rubik's Cube, a Dream From Your Childhood</h1>
 	<div >
 		<a href="../index.html"> HOME</a>&nbsp&nbsp
-		<a href="../html/introduction.html"> INTRODUCTION</a> &nbsp&nbsp
 		<a href="../html/2x2cube.html">2x2 CUBE</a>&nbsp&nbsp
 		<a href="../html/3x3cube.html">3x3 CUBE</a>&nbsp&nbsp
 		<a href="../html/4x4cube.html">4x4 CUBE</a>&nbsp&nbsp
 		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
-		
+
 	</div>
 
 	<image src="../images/2x2/cube22_00.png" style="float: right; width="250" height="250">
@@ -69,8 +93,6 @@
 	<p>For the counter-clockwise fish pattern, we can solve it by using formula: <div class="formula"> R' U' R U' R' U'2 R </div> <br>
 	For the clockwise fish pattern, we can solve it by using formula:	<div class="formula" >L U L' U L U2 L' </div><br>
  	Then all the colors on the top layer will be yellow. Note that the two formulas are mirror images of each other.</p>
-	<a href="../animation/F22_fish_cw_ccw.html">Animation: Fish Patterns </a> 
-	
 	<h3>(b) There are 2 or 4 non-yellow color on the upper layer (Fig.2c and Fig.2d)</h3>
 	<p> In this case, we will still use the two formulas above, but we need to use them more than once.
 	If there are <span style="color: brown"> <b> two </span></b>cubies whose colors are not right, 
@@ -102,10 +124,57 @@
 	<p>In this situation (Fig. 3b), it does not matter which side is on the right, but <b>we still need to rotate the cube so the yellow layer is the front layer. </b>. 
 	We then apply the same R2D2 formula, we will be able to find a side whose two corner pieces are the same color. </p>
 
-	<a href="../animation/F22_R2D2.html">R2D2 </a> 
-	<br>
-	<br>
-	<p>That's it. You have solve the 2x2 Rubik's cube. <b> Have fun!</b></p>
+	<div class="row">
+		<div class="column left" >
+		<br>
+		<br>
+		<div id="control">
+		<p>
+        <input type="button" value="L"> &nbsp			
+		<input type="button" value="R'">&nbsp	
+		<input type="button" value="x'">&nbsp
+		<input type="button" value="L'">&nbsp
+	    <input type="button" value="R">&nbsp
+	    <input type="button" value="x">	<br>
+		<input type="button" value="D">&nbsp
+		<input type="button" value="U'">&nbsp
+		<input type="button" value="y'">&nbsp
+		<input type="button" value="D'">&nbsp
+		<input type="button" value="U">&nbsp
+		<input type="button" value="y">	<br>
+		<input type="button" value="F">&nbsp
+	    <input type="button" value="B'">&nbsp
+		<input type="button" value="z'">&nbsp		
+		<input type="button" value="F'">&nbsp
+        <input type="button" value="B">&nbsp
+  		<input type="button" value="z">	</p>
+		</div>	
+		<div>
+		<p>
+		Clockwise Fish <br>
+		<input type="button" id="ini1" value="mess up1" name="F U F' U F U2 F' Y2" onClick="getInitialStatus1()"> <br><br>
+		<input type="button" id="run1" value="L U L' U L U2 L'" onClick="runContinuously1()">		</p>
+		<p>
+		Counter-clockwise Fish <br>
+		<input type="button" id="ini2" value="mess up2" name="R' U' R U' R' U2' R Y'" onClick="getInitialStatus2()"> <br><br>
+		<input type="button" id="run2" value="R' U' R U' R' U2' R" onClick="runContinuously2()"> </p>	
+		<p>	
+		R2D2 <br>
+		<input type="button" id="ini3" value="mess up3" name="x' R2 D2 R' U' R D2 R' U R' x y'" onClick="getInitialStatus3()">	<br><br>
+		<input type="button" id="run3" value="x' R2 D2 R' U' R D2 R' U R' x" onClick="runContinuously3()">	</p>
+		</div>
+		</div>
+	
+		<div class="column right">
+			<div class="cube"></div>
 		
+		</div>
+	</div>
+	<p>That's it. You have solve the 2x2 Rubik's cube. <b> Have fun!</b></p> 
+
+	</div>
+	<script src = "../js/jquery-3.1.1.min.js"></script>
+	<script src = "../js/jquery.cube2x2.js"></script>
+	<script src = "../js/animation.js"></script>		
    </body>
 </html>
