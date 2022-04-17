@@ -13,6 +13,11 @@ body {
   margin: 0 auto;
   padding: 10px;
 }
+#options {
+  position: relative;
+  z-index: 100;
+  margin-bottom: 40px;
+}
 
 a {
   color: blue;
@@ -20,16 +25,14 @@ a {
 }
 
 
-#options {
-  position: relative;
-  z-index: 100;
-  margin-bottom: 40px;
-}
+
 
 button {
   font-size: 16px;
   -webkit-appearance: push-button;
 }
+
+
 
 footer {
   border-top: 1px solid #CCC;

@@ -9,7 +9,7 @@ body {
   padding: 10px;
 }
 
-#control {
+#control-original {
 	position: relative;
 	top: 3px;
 	left: 70px;
@@ -20,6 +20,17 @@ body {
 	
 	
 }
+#control0 {
+	position: relative;
+	top: 3px;
+	text-align: left;
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+	
+	
+}
+
 #center {
 	position: relative;
 	top: 3px;
@@ -39,12 +50,12 @@ body {
     -webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;
 			
-	   -moz-transform: rotateX(-30deg) rotateY(-30deg) ;
-    -webkit-transform: rotateX(-30deg) rotateY(-30deg) ;
-			transform: rotateX(-30deg) rotateY(-30deg) ;
+	   -moz-transform: rotateX(-25deg) rotateY(-25deg) ;
+    -webkit-transform: rotateX(-25deg) rotateY(-25deg) ;
+			transform: rotateX(-25deg) rotateY(-25deg) ;
     position: relative;
     top: 150px;
-    left: 200px;
+    left: 120px;  
 	width: 300px;
 	height: 400px;
 }
@@ -142,3 +153,8 @@ body {
 	{ display: block;}
 }
 
+
+/* CSS */
+button:active{
+   background-color:red;
+}
