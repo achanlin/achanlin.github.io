@@ -51,13 +51,14 @@
 		<div class="cube"></div></div></div>
 <div>
 <p>
-<button onClick= "messItUpF44()"> mess0 </button>
-<input type="button" id="ini" value="mess1" name="l' U' R2 U l" onClick="getInitialStatus()">	<br>
-<input type="button" id="ini2" value="mess2" name="r U' R2 U r'" onClick="getInitialStatus2()">	
-<input type="button" id="ini3" value="mess3" name="r U' F R' U F' r'" onClick="getInitialStatus3()">
-<input type="button" id="refresh" value="refresh" onClick="location.reload()"> </p>
-<p>
-<input type="button" id="run3" value="R U R' F R' F' R" onClick="runContinuously3()"></p>
+Mess up edges only: <br>
+<input type="button" id="ini1" value="mess1" name="l' U' R2 U l" onclick="getInitialStatus1()">	
+&nbsp	&nbsp
+<input type="button" id="ini2" value="mess2" name="r U' F R' U F' r'" onclick="getInitialStatus2()"> <br>
+Mess up as a 3x3 cube: <br>
+<button onClick= "messItUpF44()"> mess0 </button><br>
+Mess up the center: <br>
+<input type="button" id="run3" value="R U R' F R' F' R" onclick="runContinuously3()"></p>
 </div>
 <script src = "../js/jquery-3.1.1.min.js"></script>
 <script src = "../js/jquery.cube4x4.js"></script>

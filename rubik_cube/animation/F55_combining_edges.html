@@ -15,27 +15,31 @@
 	    <input type="button" value="r'">	
 		<input type="button" value="M">
 		<input type="button" value="x'">
-	&nbsp		&nbsp	&nbsp	
-		<input type="button" value="L'">
-		<input type="button" value="l'">
-        <input type="button" value="R">
-		<input type="button" value="r">
-	    <input type="button" value="M'">
-	    <input type="button" value="x">
-	</p><P>	
+		&nbsp
 		<input type="button" value="D">
 		<input type="button" value="d">
 		<input type="button" value="U'">
 		<input type="button" value="u'">
 		<input type="button" value="E">
 		<input type="button" value="y'">
-		&nbsp		&nbsp	&nbsp		
+	<input type="button" id="ini3" name="H" value="3D" onclick="getInitialStatus3()">
+	<input type="button" id="ini" name="K" value="3U'" onclick="getInitialStatus()"> 	
+		</p><P>	
+		<input type="button" value="L'">
+		<input type="button" value="l'">
+        <input type="button" value="R">
+		<input type="button" value="r">
+	    <input type="button" value="M'">
+	    <input type="button" value="x">
+		&nbsp		
 		<input type="button" value="D'">
 		<input type="button" value="d'">	
 		<input type="button" value="U">
 		<input type="button" value="u">
 		<input type="button" value="E'">		
 		<input type="button" value="y">	
+		<input type="button" id="ini5" name="J" value="3U" onclick="getInitialStatus5()">
+		<input type="button" id="ini4" name="I" value="3D'" onclick="getInitialStatus4()">
 	</p><p>
 		<input type="button" value="F">
 	    <input type="button" value="f">
@@ -43,13 +47,17 @@
 	    <input type="button" value="b'">
 	    <input type="button" value="S">	
 		<input type="button" value="z'">		
-		&nbsp		&nbsp	&nbsp	
+		&nbsp	
 		<input type="button" value="F'">
 		<input type="button" value="f'">
         <input type="button" value="B">
         <input type="button" value="b">
 		<input type="button" value="S'">
 		<input type="button" value="z">
+		&nbsp	&nbsp
+
+
+
 	</p>
   
 </div>	
@@ -57,19 +65,13 @@
 <div class="row">
 	<div class="column">
 		<div class="cube"></div></div></div>
-<div >
-<p> 
-<input type="button" id="ini" value="mess0" name=" u' R U2 R' u y d' L' F U' L F' d " onClick="getInitialStatus()">
-<input type="button" id="ini2" value="mess1" name=" u L' F U' L F' u' z d' L' F U' L F' d " onClick="getInitialStatus2()">	
-<input type="button" id="refresh" value="refresh" onClick="location.reload()"> </p>
-<p>
-<input type="button" id="run"  value="R U R' F R' F' R" onClick="runContinuously()"> 
-<input type="button" id="ini3" name="H" value="3D" onClick="getInitialStatus3()">
-<input type="button" id="ini4" name="I" value="3D'" onClick="getInitialStatus4()">
-<input type="button" id="ini5" name="J" value="3U" onClick="getInitialStatus5()">
-<input type="button" id="ini6" name="K" value="3U'" onClick="getInitialStatus6()"> </p>
+		
+<input type="button" id="ini1" value="mess1" name="l' U' R2 U l" onclick="getInitialStatus1()">	
+&nbsp
+<input type="button" id="ini2" value="mess2" name="r U' F R' U F' r'" onclick="getInitialStatus2()"> <br>
 
-</div>
+<input type="button" id="run"  value="R U R' F R' F' R" onClick="runContinuously()"> 
+
 <script src = "../js/jquery-3.1.1.min.js"></script>
 <script src = "../js/jquery.cube5x5.js"></script>
 <script src = "../js/animation.js"></script>
