@@ -4,6 +4,7 @@
 	<title> 5x5 cube</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/html.css">
+	<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
 	</head>
 	<body>
 		<h1>Rubik's Cube, a Dream From Your Childhood</h1>
@@ -15,7 +16,60 @@
 		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
 	
 	</div>	
-	<p> 	<img src="../images/5x5/cube55_01.png" style="float:right;width:200px;height:200px";>
+	
+	<h2>Algorithm Symbols</h2>		
+	
+<div id="control">
+	<p>
+		<input type="button" value="R">
+		<input type="button" value="r">
+		<input type="button" value="L'">
+		<input type="button" value="l'">
+  	    <input type="button" value="M'">
+	    <input type="button" value="x">
+		&nbsp	&nbsp	&nbsp	&nbsp		
+		<input type="button" value="R'">
+	    <input type="button" value="r'">	
+        <input type="button" value="L">
+		<input type="button" value="l">
+		<input type="button" value="M">
+		<input type="button" value="x'">
+	</p><P>	
+		<input type="button" value="U">
+		<input type="button" value="u">		
+		<input type="button" value="D'">
+		<input type="button" value="d'">	
+		<input type="button" value="E'">		
+		<input type="button" value="y">	
+			&nbsp		&nbsp	&nbsp
+		<input type="button" value="U'">
+		<input type="button" value="u'">	
+		<input type="button" value="D">
+		<input type="button" value="d">
+		<input type="button" value="E">
+		<input type="button" value="y'">
+	</p><p>
+		<input type="button" value="B">
+        <input type="button" value="b">
+		<input type="button" value="F'">
+		<input type="button" value="f'">
+   		<input type="button" value="S'">
+		<input type="button" value="z">
+	&nbsp	&nbsp	&nbsp	&nbsp	
+		<input type="button" value="B'">
+	    <input type="button" value="b'">
+		<input type="button" value="F">
+	    <input type="button" value="f">
+	    <input type="button" value="S">	
+		<input type="button" value="z'">		
+	</p>
+</div>	
+
+<div class="row">
+	<div class="column">
+		<div class="cube"></div></div></div>
+<div>
+
 	A 5x5 Rubik's Cube is also called a Professor's Cube. So if you can solve a 5x5 Rubik's Cube, you are a professor! 
 	It must be very difficult. Actually it is not. 
 	Similar to a 4x4 cube we solve a 5x5 cube by reducing it down into a 3x3 cube, 
@@ -118,7 +172,9 @@ and there are no special cases. Some people believe that it is even easier than 
 	It's done! </p>
 	<p><b> Now you have solved the 5x5 Rubik's Cube. Enjoy!</b></p>
 	
-	
+	<script src = "../js/jquery-3.1.1.min.js"></script>
+	<script src = "../js/jquery.cube5x5.js"></script> 
+	<script src = "../js/animation.js"></script>
 	
 	</body>
 </html>

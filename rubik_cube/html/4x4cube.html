@@ -4,8 +4,7 @@
 	<title> 4x4 cube</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/html.css">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1433395076836907"
-     crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
 	</head>
 	<body>
 		<h1>Rubik's Cube, a Dream From Your Childhood</h1>
@@ -16,9 +15,55 @@
 		<a href="../html/4x4cube.html">4x4 CUBE</a>&nbsp&nbsp
 		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
 	</div>
-	<p> <img src="../images/4x4/4x4.png" style="float:right;width:250px;height:250px";></p>
+<h2>Algorithm Symbols</h2>	
+<div id="control">
+	<p>
+		<input type="button" value="R">
+		<input type="button" value="r">
+		<input type="button" value="L'">
+		<input type="button" value="l'">
+  	    <input type="button" value="x">
+		&nbsp		&nbsp	&nbsp &nbsp			
+		<input type="button" value="B">
+        <input type="button" value="b">
+		<input type="button" value="F'">
+		<input type="button" value="f'">
+   		<input type="button" value="z">
+	&nbsp		&nbsp	&nbsp &nbsp	
+		<input type="button" value="U">
+		<input type="button" value="u">		
+		<input type="button" value="D'">
+		<input type="button" value="d'">	
+		<input type="button" value="y">	
+	
+	</p><p>
+		<input type="button" value="R'">
+	    <input type="button" value="r'">	
+        <input type="button" value="L">
+		<input type="button" value="l">
+		<input type="button" value="x'">
+	
+	&nbsp		&nbsp	&nbsp	&nbsp	
+		<input type="button" value="B'">
+	    <input type="button" value="b'">
+		<input type="button" value="F">
+	    <input type="button" value="f">
+		<input type="button" value="z'">	
+		&nbsp		&nbsp	&nbsp
+		<input type="button" value="U'">
+		<input type="button" value="u'">	
+		<input type="button" value="D">
+		<input type="button" value="d">
+		<input type="button" value="y'">		
+	</p>
+  
+</div>	
+<div class="row">
+	<div class="column">
+		<div class="cube"></div></div></div>
+<p>
 	Let us now examine how to solve a 4x4 cube.
-	The most common method is to reduce a 4x4 cube to a 3x3 cube, whose solution we already know.
+	The most common method is to reduce a 4x4 cube to a 3x3 cube, whose solution we already know. </p>
 	<h2> STEP 1 , Solve The Center 2x2 Blocks. </h2>
 	<img src="../images/4x4/center20.png" alt="center02" width="80" height="80" >
 	<p> In contrast to 3x3 cubes, whose center is fixed, we must pay special attention to the relative positions of center blocks. 
@@ -41,7 +86,7 @@
 	We included it just for fun, because it is almost identical to the formula for the counterclockwise fish pattern in a 3x3 cube. 
 	Just replace the R or R' with r or r'.</p>
 	
-	<b><a href="../animation/F44_center2.html">Animation: Fix the center</a> </b>
+	<b><a href="../animation/F44_center.html">Animation: Fix the center</a> </b>
 		
 	<h2> STEP 2, Combining The Edges. </h2>
 	<p> This can be done in many ways, and there are also many formulas available on the Internet.
@@ -89,6 +134,8 @@
 	<b><a href="../animation/F44_special_cases.html"> Special Cases in 4x4 cubes</a> </b>
 	<br>
 	<p><b>Now you have solved the 4x4 Rubik's Cube. Enjoy! </b></p>
-		
+	<script src = "../js/jquery-3.1.1.min.js"></script>
+	<script src = "../js/jquery.cube4x4.js"></script>
+	<script src = "../js/animation.js"></script>		
 	</body>
 </html>

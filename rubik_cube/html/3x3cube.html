@@ -4,8 +4,7 @@
 	<title> 3x3 cube</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/html.css">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1433395076836907"
-     crossorigin="anonymous"></script>
+	<link rel="stylesheet"  href="../css/jquery.cube.css"></link>  
 	</head>
 
 	<body>
@@ -18,19 +17,65 @@
 		<a href="../html/5x5cube.html">5x5 CUBE</a>&nbsp&nbsp
 	
 	</div>
-	<p> <img src="../images/3x3/3x3.png" style="float:right;width:250px;height:250px";></p>
-	<h2>STEP2: SOLVE THE FIRST LAYER</h2>
-	<p> Let us solve the first layer, traditionally the white layer. There are many ways to do this. We present here a simple and basic method that proceeds layer by layer. Follow the steps indicated in the images below,
-	 play with the cube, you will find the way that is most comfortable for you. You can practice with the virtual cube here.</p>
-	<div class="images3">
-	<figure> <img src="../images/3x3/step1.10.png" alt="a white cross with yellow center" width="150" height="150" >
+	
+	<h2>Algorithm Symbols</h2>
+	<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="l">
+		<input type="button" value="R'">
+	    <input type="button" value="r'">	
+		<input type="button" value="M">
+		<input type="button" value="x'"> 
+		<input type="button" value="L'">
+		<input type="button" value="l'">
+        <input type="button" value="R">
+		<input type="button" value="r">
+	    <input type="button" value="M'">
+	    <input type="button" value="x">
+		</p><P>	
+		<input type="button" value="D">
+		<input type="button" value="d">
+		<input type="button" value="U'">
+		<input type="button" value="u'">
+		<input type="button" value="E">
+		<input type="button" value="y'"> 
+		<input type="button" value="D'">
+		<input type="button" value="d'">	
+		<input type="button" value="U">
+		<input type="button" value="u">
+		<input type="button" value="E'">		
+		<input type="button" value="y">	
+		</p><p>
+		<input type="button" value="F">
+	    <input type="button" value="f">
+	    <input type="button" value="B'">
+	    <input type="button" value="b'">
+	    <input type="button" value="S">	
+		<input type="button" value="z'">		
+		<input type="button" value="F'">
+		<input type="button" value="f'">
+        <input type="button" value="B">
+        <input type="button" value="b">
+		<input type="button" value="S'">
+		<input type="button" value="z">
+		</p>
+	</div>	
+	
+	<div class="cube"></div>
+	
+		<h2>STEP2: SOLVE THE FIRST LAYER</h2>
+		<p> Let us solve the first layer, traditionally the white layer. There are many ways to do this. We present here a simple and basic method that proceeds layer by layer. Follow the steps indicated in the images below,
+		play with the cube, you will find the way that is most comfortable for you. You can practice with the virtual cube here.</p>
+		<div class="images3">
+		<figure> <img src="../images/3x3/step1.10.png" alt="a white cross with yellow center" width="150" height="150" >
 			 <figcaption> Fig 1a </figcaption> </figure>
-	<figure> <img src="../images/3x3/step1.20.png" alt="a white cross with T on each side" width="150" height="150" >
+		<figure> <img src="../images/3x3/step1.20.png" alt="a white cross with T on each side" width="150" height="150" >
 			 <figcaption> Fig 1b</figcaption> </figure>	
-	<figure> <img src="../images/3x3/step1.31.png" alt="white layer with T" width="150" height="150" >
+		<figure> <img src="../images/3x3/step1.31.png" alt="white layer with T" width="150" height="150" >
 			 <figcaption> Fig 1c </figcaption> </figure>			 
-	</div>
-	<a href="../animation/F33_step1.html">Practice and Solve the first layer</a> </p>
+		</div>
+		<a href="../animation/F33_step1.html">Practice and Solve the first layer</a> </p>
 	
 		
 	<h2>STEP2: SOLVE THE SECOND LAYER (THE EDGES)</h2>
@@ -200,6 +245,9 @@
 	<br>
 	<br>
 	<br>
-		
+	<script src = "../js/jquery-3.1.1.min.js"></script>
+	<script src = "../js/jquery.cube.min.js"></script> 
+	<script src = "../js/jquery.cube3x3.js"></script>
+	<script src = "../js/animation.js"></script>		
    </body>
 </html>
