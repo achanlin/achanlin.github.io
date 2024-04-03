@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Learn about Rubik's Cube and improve your solving skills">
+<meta name="keywords" content="Rubik's Cube, puzzle, solving, algorithm, 2x2, Pocket Cube">
+<meta name="author" content="Achan Lin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Rubik's Cube 2x2 </title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/image-styles.css">
+<link rel="stylesheet" href="../css/jquery.cube.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Rubik's Cube: A Dream From My Childhood</h1>
+  <nav>
+	<a href="../../index.html">HOME</a> &nbsp
+	<a href="../index.html">INTRODUCTION</a> &nbsp
+    <a href="../html/2x2cube.html">2x2 CUBE</a> &nbsp
+    <a href="../html/3x3cube.html">3x3 CUBE</a> &nbsp
+    <a href="../html/4x4cube.html">4x4 CUBE</a> &nbsp
+    <a href="../html/5x5cube.html">5x5 CUBE</a> &nbsp
+	<a href="../html/comments.html">Contact/Comments</a>
+  </nav>
+</header>
+	
+<main>	
+<section>
+  	<div class="image-right" style="width:18%">
+			<img src="../images/2x2/cube22_00.png" alt="image" class="image" >
+			<figcaption class="caption"> </figcaption>
+	</div>	
+	<p> The original Rubik's Cube is a 3x3 cube. 
+		If you already know how to solve a classic 3x3 Rubik's Cube, 
+		then you will also know how to solve a 2x2 if you realize that:
+	<div class="formula">A 2x2 cube is a 3x3 cube with only corners! </div>
+	
+	<h2>STEP1: SOLVE THE WHITE LAYER </h2>
+	<div class="image-row">
+		<figure class="n-images" style="max-width:28%;">
+			<img src="../images/2x2/cube22_02.png" alt="image2" class="image">
+			 <figcaption class="caption"> Fig 1.1 unsolved white layer </figcaption>
+		</figure>
+		<figure class="n-images" style="max-width:28%;">
+			<img src="../images/2x2/cube22_01.png" alt="image1" class="image">
+			 <figcaption class="caption"> Fig 1.2 solved white layer </figcaption>
+		</figure>
+		<figure class="n-images" style="max-width:28%;">
+			<img src="../images/2x2/cube22_03.png" alt="image3" class="image">
+			 <figcaption class="caption"> Fig 1.3 solved white layer on the bottom </figcaption>
+		</figure>			 
+	</div>
+		
+	<p> Our first step is to create the white layer on the Rubik's Cube, 
+	ensuring that the colors on the sides are also correct. 
+	For example, in Fig 1.1, although there's a white layer, it's not correctly solved. 
+	In contrast, Fig 1.2 shows a white layer that is correctly solved.
+	This step doesn't require a specific formula; instead, practice is essential. 
+	</p>
+	<p> Now, let's rotate the cube 180 degrees to position the white layer at the bottom.(Fig 1.3)  </p>
+	
+	
+	<h2>STEP2: MAKE THE UPPER LAYER ALL YELLOW</h2>
+		
+	<h3> (a) There are 3 non-yellow color on the upper layer (Fig. 4a and Fig. 4b)</h3>
+	<p>	In this case, the upper layer has one yellow color, while the other three colors are incorrect. 
+	Let's first turn the cube left or right until the yellow color is in a back-right or back-left position, 
+	ensuring <b>there is a yellow color on the back-layer</b>. <br><br>
+	
+	If the yellow color on the upper layer is in the <b> back-left </b> corner  (Fig.2a) using formula <br>
+	<div class="formula"> R' U' R U' R' U'2 R </div> <br>
+	
+	If the yellow color on the upper layer is in the <b> back-right </b>corner (Fig.2b) using formula <br><br>
+	<div class="formula" >L U L' U L U2 L' </div> 
+	<br>
+	Note that the two formulas are mirror images of each other.</p>
+		
+	 <div class="image-container">
+		<div class="image-wrapper" style="width: calc(20% - 10px);">
+			<img src="../images/2x2/cube22_04.png" alt="Image 1">
+			<div class="caption">Fig.2a </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(20% - 7px);">
+			<img src="../images/2x2/cube22_03.png" alt="Image 2">
+			<div class="caption">Fig.2b</div>
+		</div>
+		<div class="image-wrapper" style="width: calc(20% - 10px);">
+			<img src="../images/2x2/cube22_06.png" alt="Image 3">
+			<div class="caption">Fig.2c</div>
+		</div>
+		<div class="image-wrapper" style="width: calc(20% - 10px);">
+			<img src="../images/2x2/cube22_05.png" alt="Image 4">
+			<div class="caption">Fig.2d</div>
+		</div>
+	
+    </div>
+
+	<h3>(b)There are two cubies whose colors are incorrect (Fig.2c) </h3>
+	In this case, we first turn the cube so that the color at the <b>back of the left-back corner </b>cubie is yellow, 
+	then apply formula <b> R' U' R U' R' U'2 R</b>, the cube will show one of the configuration in (a).</p>
+	<h3>(c) There are four cubies whose colors are incorrect (Fig.2d)</h3> 
+	In this case, we first turn the cube so that the color at the <b>left of the left-back corner </b>cubie is yellow,
+	then apply formula <b> R' U' R U' R' U'2 R</b>, the cube will show one of the configuration in (a).</p>
+	
+
+	<h2>STEP3: REARRANGE THE UPPER LAYER'S CORNER PEICES</h2>
+	<p>
+	<div class="image-right" style="width:15%">
+			<img src="../images/2x2/cube22_07.png" alt="image" class="image" >
+			<figcaption class="caption"> Fig.3a </figcaption>
+	</div>
+	<h3> One side has matching colors (refer to Fig.3a)</h3>
+	<p>
+	In this case, place the side with matching colors on the right side and 
+	make the yellow layer the front layer (facing us). Apply the formula <br><br>
+	<div class="formula"> R2 D2 R' U' R D2 R' U R' </div>
+	<br>
+	</p>
+	
+	<p>
+	<div class="image-right" style="width:15%">
+			<img src="../images/2x2/cube22_08.png" alt="image" class="image" >
+			<figcaption class="caption"> Fig.3b </figcaption>
+	</div>
+	<h3> No matching colors on any side (refer to Fig.3b)</h3>
+	In this situation, it doesn't matter which side is on the right, but ensure the yellow layer is the front layer.
+	Apply the previous formula, then the cube will have a matching colors on the side, back to the previous situation.
+	</p>
+
+</section>
+<section>
+	<div class="row">
+	  <div class="column left" >
+		<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'">
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+		<p>
+  		</div>
+		
+		<h3> Formula Practice </h3>
+		<p>
+		<input type="button" id="ini1" value="mess up1" name="F U F' U F U2 F' Y2" onClick="getInitialStatus('ini1')"> &nbsp &nbsp &nbsp &nbsp
+		<input type="button" id="run1" value="L U L' U L U2 L'" onClick="runContinuously('run1')">		</p>
+		<p>
+		<input type="button" id="ini2" value="mess up2" name="R' U' R U' R' U2' R Y'" onClick="getInitialStatus('ini2')"> &nbsp &nbsp &nbsp &nbsp
+		<input type="button" id="run2" value="R' U' R U' R' U2' R" onClick="runContinuously('run2')"> </p>	
+		<p>	
+		<input type="button" id="ini3" value="mess up3" name="x' R2 D2 R' U' R D2 R' U R' x y'" onClick="getInitialStatus(`ini3`)">	&nbsp &nbsp &nbsp &nbsp
+		<input type="button" id="run3" value="x' R2 D2 R' U' R D2 R' U R' x" onClick="runContinuously(`run3`)">	</p>
+	  </div>
+	
+	  <div class="column right">
+		<div class="cube"></div>
+	  </div>
+	</div>
+	
+	<p>That's it. You have solve the 2x2 Rubik's cube. <b> Have fun!</b></p> 
+</section>	
+</main>
+
+<footer>
+ <p>&copy; 2024 Website: rubikcube.ca.  All rights reserved. </p>
+</footer>
+
+<!--<script src=".!--<script src = "../js/jquery-3.1.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--script src="../js/jquery.cube.min.js" defer></script-->
+<script src="../js/jquery.cube2x2.js" defer></script>
+<script src="../js/animation.js" defer></script>
+</body>
+</html>

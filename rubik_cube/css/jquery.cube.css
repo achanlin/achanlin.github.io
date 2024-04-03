@@ -1,0 +1,157 @@
+body {
+	
+  background-color: #f5efbd;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  -webkit-text-size-adjust: none;
+  color: #333;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#control-original {
+	position: relative;
+	top: 3px;
+	left: 70px;
+	text-align: left;
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+	
+	
+}
+#control {
+	position: relative;
+	top: 3px;
+	text-align: left;
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+	
+	
+}
+
+#center {
+	position: relative;
+	top: 3px;
+	left: 70px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	
+	
+}
+
+.cube {
+	-webkit-perspective: 2400px;
+	   -moz-perspective: 2400px;
+			perspective: 2400px;
+	   -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			
+	   -moz-transform: rotateX(-25deg) rotateY(-25deg) ;
+    -webkit-transform: rotateX(-25deg) rotateY(-25deg) ;
+			transform: rotateX(-25deg) rotateY(-25deg) ;
+    position: relative;
+    top: 150px;
+    left: 120px;  
+	width: 300px;
+	height: 400px;
+}
+.cube *,
+.cube *:after,
+.cube *:before {
+    -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.cube .cubit {
+	   -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	position: absolute;
+	
+
+}
+
+.cube .cubit .face {
+
+	position:absolute;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 6px;
+	display: block;
+    opacity: 1;
+	z-index: -1;
+    text-align: center;
+    font-size:30px; 
+	backface-visibility: hidden; 
+
+}
+
+/* mozilla doesn't properly cull
+   hidden faces, this is a work around. */
+@-moz-document url-prefix() { 
+
+    .cube .cubit .face.f6,
+    .cube .cubit .face.f4,
+    .cube .cubit .face.f3,
+
+    .cube .cubit:nth-child(4) .face.f5,
+    .cube .cubit:nth-child(5) .face.f5,
+    .cube .cubit:nth-child(6) .face.f5,
+    .cube .cubit:nth-child(7) .face.f5,
+    .cube .cubit:nth-child(8) .face.f5,
+    .cube .cubit:nth-child(9) .face.f5,
+
+    .cube .cubit:nth-child(13) .face.f5,
+    .cube .cubit:nth-child(14),
+    .cube .cubit:nth-child(15) .face.f5,
+    .cube .cubit:nth-child(16) .face.f5, 
+    .cube .cubit:nth-child(17) ,  /*this is different from original but it seems work better */
+    .cube .cubit:nth-child(18) .face.f5,
+
+    .cube .cubit:nth-child(22) .face.f5,
+    .cube .cubit:nth-child(23) .face.f5,
+    .cube .cubit:nth-child(24) .face.f5,
+    .cube .cubit:nth-child(25) .face.f5,
+    .cube .cubit:nth-child(26) .face.f5,
+    .cube .cubit:nth-child(27) .face.f5  
+	{ display: none; }
+
+    .cube .cubit:nth-child(7) .face.f6, 
+    .cube .cubit:nth-child(8) .face.f6,
+    .cube .cubit:nth-child(9) .face.f6,
+    .cube .cubit:nth-child(16) .face.f6,
+    .cube .cubit:nth-child(17) .face.f6,
+    .cube .cubit:nth-child(18) .face.f6,
+    .cube .cubit:nth-child(25) .face.f6,
+    .cube .cubit:nth-child(26) .face.f6,
+    .cube .cubit:nth-child(27) .face.f6,
+
+    .cube .cubit:nth-child(1) .face.f4,
+    .cube .cubit:nth-child(4) .face.f4,
+    .cube .cubit:nth-child(7) .face.f4,
+    .cube .cubit:nth-child(10) .face.f4,
+    .cube .cubit:nth-child(13) .face.f4,
+    .cube .cubit:nth-child(16) .face.f4,
+    .cube .cubit:nth-child(19) .face.f4,
+    .cube .cubit:nth-child(22) .face.f4,
+    .cube .cubit:nth-child(25) .face.f4,
+
+    .cube .cubit:nth-child(1) .face.f3,
+    .cube .cubit:nth-child(2) .face.f3,
+    .cube .cubit:nth-child(3) .face.f3,
+    .cube .cubit:nth-child(4) .face.f3,
+    .cube .cubit:nth-child(5) .face.f3,
+    .cube .cubit:nth-child(6) .face.f3,
+    .cube .cubit:nth-child(7) .face.f3,
+    .cube .cubit:nth-child(8) .face.f3,
+    .cube .cubit:nth-child(9) .face.f3
+	{ display: block;}
+}
+
+
+

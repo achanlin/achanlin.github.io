@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments Blog</title>
+  <link rel="stylesheet" href="../css/comments.css">
+</head>
+<body>
+  <header>
+    <h1 class="center" >Comments</h1>
+  </header>
+
+  <main id="comments">
+    <!-- Comments will be dynamically loaded here -->
+  </main>
+
+  <footer>
+	<form id="commentForm" >
+      <input type="text" id="name" placeholder="Your Name" required>
+      <textarea id="comment" placeholder="Please leave a comment" required></textarea>
+	  <input type="email" id="email" placeholder="Your Email (optional)">
+      <button type="submit">Post Comment</button> 
+	</form>
+  </footer>
+ 
+  <script src="../js/comments.js"></script>
+</body>
+</html>
+

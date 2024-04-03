@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula R2D2</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+<body>
+
+<body>
+
+<div id="control">
+	<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		<input type="button" value="M">
+	    <input type="button" value="E">
+	    <input type="button" value="S">
+	    <input type="button" value="M'">
+	    <input type="button" value="E'">	
+		<input type="button" value="S'">		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+  
+</div>	
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="cube"></div></div></div>
+<div>		
+<input type="button" id="ini" value="press me first" name="x' R2 D2 R' U' R D2 R' U R' x y'" onClick="getInitialStatus('ini')">	
+<br><br>	
+<input type="button" id="run" value="x' R2 D2 R' U' R D2 R' U R' x" onClick="runContinuously('run')">	
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src = "../js/jquery.cube.min.js"></script>
+<script src = "../js/jquery.cube3x3.js"></script>
+<script src = "../js/animation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Learn about Rubik's Cube and improve your solving skills">
+<meta name="keywords" content="Rubik's Cube, puzzle, solving, algorithm, 4x4, 4x4x4, Rubik's Revenge">
+<meta name="author" content="Achan Lin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Rubik's Cube 4x4 </title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/image-styles.css">
+<link rel="stylesheet" href="../css/jquery.cube.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Rubik's Cube: A Dream From My Childhood</h1>
+  <nav>
+    <a href="../../index.html">HOME</a> &nbsp
+	<a href="../index.html">INTRODUCTION</a> &nbsp
+    <a href="../html/2x2cube.html">2x2 CUBE</a> &nbsp
+    <a href="../html/3x3cube.html">3x3 CUBE</a> &nbsp
+    <a href="../html/4x4cube.html">4x4 CUBE</a> &nbsp
+    <a href="../html/5x5cube.html">5x5 CUBE</a> &nbsp
+	<a href="../html/comments.html">Contact/Comments</a>
+  </nav>
+</header>
+	
+<main>	
+
+<section>
+<h2>Algorithm Symbols</h2>	
+
+	<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+
+	</div>	
+	<div class="row">
+		<div class="column">
+			<div class="cube"></div></div></div>
+		
+</section>
+
+<section>
+  <h2> Solve The Center 2x2 Blocks. </h2>
+	<p> Let's explore how to solve a 4x4 cube.
+	The most common approach is to reduce the 4x4 cube into a 3x3 cube, for which we already know the solution.. </p>
+
+	<div class="image-right" style="width:20%">
+			<img src="../images/4x4/center21.png" alt="image" class="image" >
+			<figcaption class="caption"> A Yellow Cross </figcaption>
+	</div>	
+	<p> Unlike 3x3 cubes with fixed centers, we need to be mindful of the relative positions of center blocks in a 4x4 cube.
+	Incorrect orientation of the center blocks can prevent cube solving.
+	Orient the cube as follows: 
+	<b>yellow on top, white at the bottom, red in front, orange at the back, green on the right, and blue on the left</b>.
+	If you're unsure about the orientation, keep a solved 3x3 cube nearby for reference. </p>
+	<p>To solve the center block, we typically start with a 1x2 block and then add another 1x2 block 
+	without altering the already solved center block.
+	The first four centers are usually straightforward. 
+	If you face challenges with the last two center blocks, consider using the following two formulas for assistance.
+	 </p>
+	  <div class="image-container">
+		<div class="image-wrapper" style="width: calc(45% - 10px);">
+			<img src="../images/4x4/center16.png" alt="Image 1">
+			<div class="caption">(r2' B r2 B) (r2' B2 r2)</div>
+		</div>
+		<div class="image-wrapper" style="width: calc(45% - 10px);">
+			<img src="../images/4x4/center15x.png" alt="Image 2">
+			<div class="caption"> (r' U' r U') (r' U2' r)</div>
+		</div>
+	  </div>
+	
+	<p>
+	Note that since r2' = r2, you can freely interchange r2 and r2' in the first formulas. 
+	When solving a 4x4 cube, it's beneficial to work in pairs such as 
+	(white-yellow), (red-orange), and (green-blue). 
+	This approach reduces confusion about the relative positions of the center middle blocks. 
+	If you solve it in pairs, you won't need the second formula. 
+	However, we've included it for enjoyment as it closely resembles the formula for the 
+	counterclockwise fish pattern in a 3x3 cube. Simply replace R or R' with r or r'.</p>
+	
+	<b><a href="../animation/F44_center.html">Animation: Fix the center</a> </b>
+</section>
+<section>		
+	<h2> Combining The Edges. </h2>
+	<p> There are multiple approaches to do this, and you can find numerous formulas online. 
+	Recently, I learned a method that, in my opinion, is the best one yet.
+	In a 4x4 cube, completed edges consist of two edge cubies. 
+	Our first step is to locate the two edge cubies we want to combine. 
+	If these edge cubies are on the same layers but different sides (refer to as Fig. 2.1 or Fig. 2.2), 
+	we can apply the formula:
+	<div class="formula">u' R U R' F R' F' R u</div>
+	If the two edges cubies are on different layers (refer to Fig.2.3 or Fig.2.4),  
+	we can apply formula <div class="formula"> R U R' F R' F' R</div> 
+	This formula will reposition them to situations like Fig. 2.1 or Fig. 2.2.</p>
+	
+	<p><b>Tip:</b> We know that an edge cubie displays two visible sides. 
+	The formula <b>R U R' F R' F' R</b> will reverse the colors of these two sides 
+	and exchange the position of the edge cubie from the second layer 
+	with the edge cubie from the third layer on the right side. 
+	The core part of these two formulas is exactly the same, 
+	and that's the only formula we need to remember to combine the edges efficiently. </p>
+		
+	<p>Practice with the formula, you will master it in no time.</p>
+	
+	<div class="image-container">
+		<div class="image-wrapper">
+			<img src="../images/4x4/edge_same_row2.png" alt="Image 1">
+			<div class="caption">Fig.2.1 </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/4x4/edge_same_row3.png" alt="Image 2">
+			<div class="caption">Fig.2.2 </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/4x4/edge_rowA.png" alt="Image 3">
+			<div class="caption">Fig.2.3 </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/4x4/edge_rowB.png" alt="Image 4">
+			<div class="caption">Fig.2.4 </div>
+		</div>
+	</div>
+		
+	<b><a href="../animation/F44_combining_edges.html">Animation: Combining Edges</a> </b>
+	</p>
+</section>
+
+<section>			
+	<h2> SOLVE THE 4x4 CUBE AS IT IS A 3x3 CUBE </h2>
+	<p>Now you can solve your 4x4 Rubik's Cube with solved centers (2x2 blocks) and edges (1x2 blocks) just like a 3x3 cube! 
+	However, sometimes, you will encounter situations unique to the 4x4 cube that you won't encounter in a 3x3 cube. </p>
+	<h2> SPECIAL CASES IN 4x4 CUBE </h3>
+	Consider these two special situations:
+	<div class="image-container">
+		<div class="image-wrapper" style="width: calc(45% - 10px);">
+			<img src="../images/4x4/yellow_cross.png" alt="Image 1">
+			<div class="caption">Could not make a yellow cross </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(45% - 10px);">
+			<img src="../images/4x4/F44sp2.png" alt="Image 2">
+			<div class="caption">Need to exchange two edges </div>
+		</div>
+	</div>
+
+	<p>The following formula will help you if you could not make a yellow cross using only formulas from 3x3 cube.</p>
+	<div class="formula">(r U2) x (r U2) (r U2) (r' U2) (l U2) (r' U2) (r U2) (r' U2 ) r'</div> </p>
+	<p>If in the last step, you need to exchange only two edges, 
+	you can use the following simple formula which will bring the cube back to situations that could be solved as a 3x3 cube:
+	<div class="formula"> Q2 U2 Q2 u2 Q2 u2 </div>  
+	Here Q (not a standard notation) indicates the virtical layer right beside the right side R.</p> 
+	<b><a href="../animation/F44_special_cases.html"> Special Cases in 4x4 cubes</a> </b>
+	<br>
+	<p><b>Now you have solved the 4x4 Rubik's Cube. Enjoy! </b></p>
+</section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Website: rubikcube.ca.   All rights reserved. </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="../js/jquery.cube4x4.js" defer></script>
+<script src="../js/animation.js" defer></script>
+</body>
+</html>
+
+

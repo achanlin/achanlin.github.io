@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F33 fish rotate fish</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+<body>
+
+
+<div id="control">
+	<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		<input type="button" value="M">
+	    <input type="button" value="E">
+	    <input type="button" value="S">
+	    <input type="button" value="M'">
+	    <input type="button" value="E'">	
+		<input type="button" value="S'">		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+  
+</div>	
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="cube"></div></div></div>
+<p>
+<input type="button" id="ini1" value="mess up 1" name="(R' U' R U' R' U2' R) y2 (F U F' U F U2 F') y2 " onClick="getInitialStatus('ini1')">	
+<input type="button" id="run1" value="(L U L' U L U2 L') y (R' U' R U' R' U2' R)" onClick="runContinuously('run1')"></p>
+<p>
+<input type="button" id="ini2" value="mess up 2" name="(F U F' U F U2 F') y2 (R' U' R U' R' U2' R) y'" onClick="getInitialStatus('ini2')">	
+<input type="button" id="run2" value="(R' U' R U' R' U2' R) y' (L U L' U L U2 L')" onClick="runContinuously('run2')"></p>
+
+<!--<input type="button" id="run3" value="(R' U' R U' R' U2' R) y' (L U L' U L U2 L')" onClick="runC('run3', this.value)"></p> -->
+
+<!--<script src = "../js/jquery-3.1.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--script src = "../js/jquery.cube.min.js"></script-->
+<script src = "../js/jquery.cube3x3.js"></script>
+<script src = "../js/animation.js"></script>
+
+
+</body>
+</html>

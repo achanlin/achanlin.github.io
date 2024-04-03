@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Learn about Rubik's Cube and improve your solving skills">
+<meta name="keywords" content="Shi Fengshou, math operations">
+<meta name="author" content="Achan Lin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Multiplication</title>
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body>
+	<table id="t01">
+		<tr>
+			<td> <a href="../../index.html">Home</a> </td>
+			<td> <a href="../index.html"> Introduction</a></td>
+			<td> <a href="../html/addition.html"> Addition </a> </td>
+			<td> <a href="../html/subtraction.html">Subtraction</a> </td>
+			<td> <a href="../html/multiplication.html">Multiplication</a> </td>
+			<td> <a href="../html/division.html">Division </a> </td>
+			<td> <a href="../html/comments.html"> Contact/Comments</a></td>
+		</tr>
+	</table>
+	<center>
+		<h2> MULTIPLICATION </h2>
+	</center>
+	<p> You can practice basic mathematical operations here. 
+	When you press the start button, a question will be given to you. 
+	Try your best to solve the problem. </p>
+	<p>You can press the check button to see if your answer is correct. </p>
+	Press the finish button when you no longer want to play. 
+	You will receive statistical results of your practice.</p>
+	<p> Let's start!</p>
+	<div>
+	<form id="maths" action="">  
+	<table class="center" border="1px" >
+		<input type="button" style="width:120px; height:40px;" value="Start"  onClick="start_game()">
+		<tr>
+			<td><input type="text"  name="number1" id="number1" ><input type="button" value="x"  id="operator" ></td>
+			<td><input type="text"  name="number2" id="number2" ></td></tr>
+		<tr>
+			<td align="right"> <input type="button" value="=" align="center"> </td> 
+			<td><input type="text" name="answer" id="answer" > </td> </tr>
+		<tr>
+			<td><input type="button" value="Check" onClick="check_it()"></td>
+			<td><input type="text" id="correct_answer" ></td></tr>
+		<tr>
+			<td colspan=2 align="center"> <input type="button" value="Next_Question" onClick="get_question()"> </td> </tr>	
+		<tr>
+			<td><input type="button" value="Questions Done:"></td>
+			<td><input type="text" name="questions" id="questions" value="" readonly="readonly"></td></tr>
+		<tr>
+			<td><input type="button" value="Right Answers"></td>
+			<td><input type="text" name="rights"    id="rights"    value="" readonly="readonly"></td></tr>
+		<tr>
+			<td><input type="button" value="Wrong Answers"></td>
+			<td><input type="text" name="wrongs"    id="wrongs"    value="" readonly="readonly"></td></tr>
+   </table>
+ <input type="button" style="width:120px; height:40px;" value="Finish" onClick="finish()">
+   </form>  
+   </div>
+   <br>
+   <br>
+   <textarea align="center" name="comments" id="comments" rows="4" cols="44" > </textarea>
+<script type="text/javascript" src="../js/multiplication.js"></script>
+</body>
+</html>

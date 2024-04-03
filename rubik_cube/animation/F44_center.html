@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>F44_fix_the_last_two_center_blocks</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+
+<body>
+	
+	<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+
+	</div>	
+	<div class="row">
+		<div class="column">
+			<div class="cube"></div></div></div>
+
+<div>	
+	<p>
+	<button onClick= "messItUpF44()"> Mess up as 3x3 cube </button></p>	
+    <p>
+	<input type="button" id="ini3" value="Mess up the center" name="r U r' U r U2 r' U2" onclick="getInitialStatus('ini3')"> </p>
+	<p>
+	<input type="button" id="ini4" value="Mess up the center" name="r2 B r2' B r2 B2 r2' B2" onclick="getInitialStatus('ini4')">	</p>
+	<p>
+	<input type="button" id="run1" value="r' U' r U' r' U2' r" onclick="runContinuously('run1')"> </p>
+	<p>
+	<input type="button" id="run2" value="r2' B r2 B r2' B2 r2"onClick="runContinuously('run2')"></p>
+</div>
+
+<!--<script src = "../js/jquery-3.1.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--<script src = "../js/jquery.cube.min.js"></script> -->
+<script src = "../js/jquery.cube4x4.js"></script>
+<script src = "../js/animation.js"></script>
+
+</body>
+</html>	

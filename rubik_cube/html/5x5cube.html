@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Learn about Rubik's Cube and improve your solving skills">
+<meta name="keywords" content="Rubik's Cube, puzzle, solving, algorithm, 5x5, 5x5x5, Professor's Cube">
+<meta name="author" content="Achan Lin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Rubik's Cube 4x4 </title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/image-styles.css">
+<link rel="stylesheet" href="../css/jquery.cube.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Rubik's Cube: A Dream From My Childhood</h1>
+  <nav>
+    <a href="../../index.html">HOME</a> &nbsp
+	<a href="../index.html">INTRODUCTION</a> &nbsp
+    <a href="../html/2x2cube.html">2x2 CUBE</a> &nbsp
+    <a href="../html/3x3cube.html">3x3 CUBE</a> &nbsp
+    <a href="../html/4x4cube.html">4x4 CUBE</a> &nbsp
+    <a href="../html/5x5cube.html">5x5 CUBE</a> &nbsp
+	<a href="../html/comments.html">Contact/Comments</a>
+  </nav>
+</header>
+	
+<main>	
+
+<section>
+  <h2>Algorithm Symbols</h2>	
+	<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		<input type="button" value="M">
+	    <input type="button" value="E">
+	    <input type="button" value="S">
+	    <input type="button" value="M'">
+	    <input type="button" value="E'">	
+		<input type="button" value="S'">		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+	</div>	
+	
+
+<div class="row">
+	<div class="column">
+		<div class="cube"></div></div></div>
+</section>
+
+<section>
+	<p>
+	A 5x5 Rubik's Cube is also called a Professor's Cube. So if you can solve a 5x5 Rubik's Cube, you are a professor! 
+	It must be very difficult. Actually it is not. 
+	Similar to a 4x4 cube we solve a 5x5 cube by reducing it down into a 3x3 cube, 
+    and there are no special cases. Some people believe that it is even easier than a 4x4. </p>
+	
+	<h2> Fix The Center 3x3 Block </h2>
+	<p>The first step in solving a 5x5 Rubik's Cube is to fix the six 3x3 center blocks. 
+	This step is easier than in a 4x4 cube because the relative positions of the 3x3 center blocks 
+	are determined by the center piece on each side. <br><br>
+	We can solve the center block using similar methods as the 4x4 cube. 
+	For each 3x3 center block, we usually start with the center 1x3 block 
+	and then add the two other 1x3 blocks.
+	</p>
+	<div class="image-container">
+		<div class="image-wrapper">
+			<img src="../images/5x5/cube55_center1.png" alt="Image 1">
+			<div class="caption">Fig.5.1 </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/5x5/cube55_center2.png" alt="Image 2">
+			<div class="caption">Fig.5.2 </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/5x5/cube55_center3.png" alt="Image 3">
+			<div class="caption">Fig.5.3 </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/5x5/cube55_02.png" alt="Image 4">
+			<div class="caption">Fig.5.4 </div>
+		</div>
+	</div>
+	
+	
+	<p>The first few centers are always easier. The last two centers may be a little difficult. The following formulas might help you. </p>
+	
+	<div class="image-container">
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_center6.png" alt="Image 1">
+			<div class="caption">r2' B r2 B r2' B2 r2 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_center6z.png" alt="Image 2">
+			<div class="caption">r2' B r2 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_center6y.png" alt="Image 3">
+			<div class="caption">r2' B r2 B r2' B2 r2 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_center5x.png" alt="Image 4">
+			<div class="caption">r' U' r U' r' U'2 r </div>
+		</div>
+	</div>
+	
+	<b> <a href="../animation/F55_center_blocks.html"> Fix the center blocks</a> </b> 
+	<p>
+	Note that since <b>r2' = r2</b>, you can interchange <b>r2</b> and <b>r2'</b> in the first three formulas as you wish. 
+	We can solve a 5x5 cube center blocks the same way as we solve a 4x4 cube, i.e.,
+	we solve it in pairs (white-yellow), (red-orange), (green-blue). 
+	If you proceed in this way, you do not need the last formula. 
+	We included it just for fun, because it is almost identical to the formula for 
+	the counterclockwise fish pattern in a 3x3 cube. 
+	Just replace the R or R' with r or r'.
+	</p>
+	<p>
+	For the first situation, where we need to replace only one piece and this piece is not the center of the 1x3 block, 
+	place the cube exactly as shown in the above image, then we can apply the formula <b>r2' B r2 B r2' B2 r2 </b>. </p>
+	<p>
+	For the second situation, where we need to replace one piece and this piece is the center of the 1x3 blocks 
+	of the last two unsolved center blocks, place the two 1x3 blocks exactly as shown in the above image, 
+	then simply apply <b>r2' B r2</b>, the cube will now look similar to the first situation.
+	</p>
+	<p>For the third situation, where the centers of the 1x3 block of the last two unsolved centers are correct, 
+	but the other two are wrong, apply the same formula <b>r2' B r2 B r2' B2 r2</b>, 
+	the cube will look similar to the first situation.
+	</p>
+</section>
+
+<section>		
+	<h2>Combining The Edges. </h2>
+	<p><img src="../images/5x5/cube55_03.png" style="float:left;width:150px;height:150px; margin-right: 100px" >
+	Combining edges in a 5x5 Rubik's Cube is time-consuming but intuitive. Similar to solving a 4x4 cube, we rely mostly on formula
+	<div class="formula"> R U R' F R' F' R </div> </p>
+	<p> <h3> Obtain the 1x2 block</h3>
+	The complete formula in this section will also use notation such as 3U, 
+	which means that we turn three layers (U and the two layers below it) 
+	together in the same direction as U. The concept is the same for 3U' or 3D. <br><br>
+	
+    A solved 1x3 edge block in a 5x5 Rubik's cube consists of one inner edge (on the third layer)
+	and two outer edges (on the second and fourth layer).
+	Before obtaining a 1x3 edge block, we need to acquire a 1x2 block that includes the inner edge. <br><br>
+	
+	To achieve the desired 1x2 block, start by identifying the necessary edge pieces. 
+	Then, place the inner edge that we want to combine on the right side. The methods are illustrated below. 
+	</p>  
+	
+	<div class="image-container">
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge1b.png" alt="Image 1"> 
+			<div class="caption">u'(RUR'FR'F'R)u &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge1c.png" alt="Image 2">
+			<div class="caption"> </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge1a.png" alt="Image 3">
+			<div class="caption">3U'(RUR'FR'F'R)3U &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge1c.png" alt="Image 4">
+			<div class="caption"> </div>
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="image-container">
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge7a.png" alt="Image 1">
+			<div class="caption">d(RUR'FR'F'R)d' &#8594  </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge7b.png" alt="Image 2">
+			<div class="caption"> </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge8a.png" alt="Image 3">
+			<div class="caption">3D(RUR'FR'F'R)3D' &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge8b.png" alt="Image 4">
+			<div class="caption"> </div>
+		</div>
+	</div>
+
+	
+	<h3>Obtain the 1x3 block </h3>
+	
+	<p>To obtain the 1x3 block, arrange the 1x2 blocks with the inner edge on the right side 
+	and place the single edge cubie on the left side. Apply the following formulas accordingly.</p>
+	
+	<div class="image-container">
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge2a.png" alt="Image 1">
+			<div class="caption"> RUR'FR'F'R &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge2b.png" alt="Image 2">
+			<div class="caption"> 3U'(RUR'FR'F'R)3U&#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge2c.png" alt="Image 3">
+			<div class="caption"> </div>
+		</div>
+	</div>
+	<br>
+	<div class="image-container">
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge3a.png" alt="Image 1">
+			<div class="caption"> RUR'FR'F'R &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge3b.png" alt="Image 2">
+			<div class="caption"> 3D(RUR'FR'F'R)3D' &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge3c.png" alt="Image 3">
+			<div class="caption"> </div>
+		</div>
+	</div>
+	<br>
+	<div class="image-container">
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge4a.png" alt="Image 1">
+			<div class="caption"> RUR'FR'F'R &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge4b.png" alt="Image 2">
+			<div class="caption"> u'( RUR'FR'F'R) u &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge4c.png" alt="Image 3">
+			<div class="caption"> </div>
+		</div>
+	</div>
+	<br>
+	
+
+	<div class="image-container">
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge5a.png" alt="Image 1">
+			<div class="caption"> RUR'FR'F'R &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge5b.png" alt="Image 2">
+			<div class="caption"> d(RUR'FR'F'R)d' &#8594 </div>
+		</div>
+		<div class="image-wrapper" style="width: calc(25% - 10px);">
+			<img src="../images/5x5/cube55_edge3c.png" alt="Image 3">
+			<div class="caption"> </div>
+		</div>
+	</div>
+		
+	
+	<b> <a href="../animation/F55_combining_edges.html"> Animation: Combining edges </a> </b> 
+	
+	<h3>THE LAST UNSOLVED EDGE </h3>
+	<p>
+	<div class="image-right" style="width:23%">
+			<img src="../images/5x5/cube55_10.png" alt="image" class="image" >
+			<figcaption class="caption"> </figcaption>
+	</div>	
+	With the above formulas, we can combine the edges block by block. If you are lucky, you can solve all 12 edge blocks. 
+	But it may happen that the last edge block cannot be solved with the above method. We must deal with it on its own.
+	When you manipulate the cube using the formula mentioned above, 
+	the last unsolved edge block can always appear as shown in the picture on the right. 
+	This situation can be resolved using the following formula:
+	</p>
+	<b> <a href="../animation/F55_last_edge_block.html"> (rU2) x (rU2) (rU2) (r'U2) (lU2) M (r'U2) (rU2) (r'U2) r'</a> </b>
+	
+	<p>Notice that this is very similar to the 4x4 special case formula except an <b>M </b> after <b>lU2</b>. In the practice <b> Mr'=3R'</b>, 
+	 hence, M(r'U2) means we move three layers on the right hand side together, in direction R', then U2. 
+	 x means rotate the entire tube 90 degree away from you. </p>
+				 
+	<h2> STEP 3: SOLVE THE 5x5 CUBE AS IT IS A 3x3 CUBE </h2>
+	<p> Now we have a 5x5 cube with a 3x3 solved center block and 12 solved 1x3 edge blocks. 
+	We can solve it just like a 3x3 cube. <br><br>
+	Congratulations! You have successfully solved the 5x5 Rubik's Cube. 
+	Enjoy your accomplishment!
+	</p>
+	
+	
+</section>
+</main>
+
+<footer>
+   <p>&copy; 2024 Website: rubikcube.ca.  All rights reserved. </p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="../js/jquery.cube5x5.js" defer></script>
+<script src="../js/animation.js" defer></script>
+</body>
+</html>	
+

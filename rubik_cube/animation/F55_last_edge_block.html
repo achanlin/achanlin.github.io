@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>F55 The Last unsolved edge</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+
+<body>
+
+<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		<input type="button" value="M">
+	    <input type="button" value="E">
+	    <input type="button" value="S">
+	    <input type="button" value="M'">
+	    <input type="button" value="E'">	
+		<input type="button" value="S'">		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+	</div>	
+	
+
+<div class="row">
+	<div class="column">
+		<div class="cube"></div></div></div>
+<div >
+<p>
+<input type="button" id="ini" value="mess up" name=" (r2 B2 U2) (l U2) (r' U2) (r U2) (F2 r F2) (l' B2) r2 R Y U' L' D" onClick="getInitialStatus('ini')"> <br><br>
+
+<input type="button" id="run" value="(r U2) x (r U2) (r U2) (r' U2) (l U2) M (r' U2)  (r U2) (r' U2 ) r'" onClick="runContinuously('run')">	</p>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src = "../js/jquery.cube5x5.js"></script>
+<script src = "../js/animation.js"></script> 
+
+</body>
+</html>

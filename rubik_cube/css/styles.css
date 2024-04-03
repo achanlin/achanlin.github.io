@@ -1,0 +1,91 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Set a root font size for relative units */
+html {
+  font-size: 16px;
+}
+
+/* Mobile-first styles */
+body {
+  background-color: #f5efbd;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Center content horizontally */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  color: blue;
+  text-decoration: underline; /* Remove underline from links */
+}
+
+button {
+  font-size: 16px;
+  -webkit-appearance: none; /* Remove default button styles */
+  border: none;
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  margin: 0 0 3.0em 0;
+  padding: 0;
+}
+
+nav ul a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-bottom: none;
+  text-align: center; /* Center align text */
+  text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li:first-child a {
+  border-radius: 10px 10px 0 0;
+}
+
+nav ul li:last-child a {
+  border-radius: 0 0 10px 10px;
+  border-bottom: 1px solid #CCC;
+}
+
+.formula{
+	fpmt-family: 'Helvetica Neue', Arial, sans-serif;
+	color:brown;
+	text-align:center;
+	font-weight:bold
+}
+.center {
+      text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 600px) {
+  body {
+    max-width: 1200px;
+  }
+  .nav-toggle {
+    display: block;
+    /* Add styles for the hamburger icon (you can use an icon font or an SVG) */
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+}

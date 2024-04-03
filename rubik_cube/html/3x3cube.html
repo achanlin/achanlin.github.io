@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Learn about Rubik's Cube and improve your solving skills">
+<meta name="keywords" content="Rubik's Cube, puzzle, solving, algorithm, 3x3, 3x3x3">
+<meta name="author" content="Achan Lin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Rubik's Cube 3x3 </title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/image-styles.css">
+<link rel="stylesheet" href="../css/jquery.cube.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Rubik's Cube: A Dream From My Childhood</h1>
+  <nav>
+    <a href="../../index.html">HOME</a> &nbsp
+	<a href="../index.html">INTRODUCTION</a> &nbsp
+    <a href="../html/2x2cube.html">2x2 CUBE</a> &nbsp
+    <a href="../html/3x3cube.html">3x3 CUBE</a> &nbsp
+    <a href="../html/4x4cube.html">4x4 CUBE</a> &nbsp
+    <a href="../html/5x5cube.html">5x5 CUBE</a> &nbsp
+	<a href="../html/comments.html">Contact/Comments</a>
+  </nav>
+</header>
+	
+<main>	
+  
+  <section>
+	<h2>STEP1: SOLVE THE FIRST LAYER</h2>
+	<p> Now let's solve a 3x3 Rubik's cube. There are many ways to do it. The method introduced here requires minimum memory work. 
+		We solve it layer by layer. That is, we solve one side first, make that side at the bottom layer, then solve the second layer, then the last layer, the top layer.
+		Let's start by solving the first layer, typically the white layer. There are numerous methods for achieving this, 
+		but we'll outline a straightforward approach that progresses layer by layer. 
+		Follow the steps illustrated in the images below, experiment with the cube, 
+		and discover the method that suits you best. You can also practice using the virtual cube available here."</p>
+	<div class="image-row">
+		<figure class="n-images">
+			<img src="../images/3x3/step1.10.png" alt="image1" class="image">
+			 <figcaption class="caption"> Fig 1a </figcaption>
+		</figure>
+		<figure class="n-images">
+			<img src="../images/3x3/step1.20.png" alt="image2" class="image">
+			 <figcaption class="caption"> Fig 1b </figcaption>
+		</figure>
+		<figure class="n-images">
+			<img src="../images/3x3/step1.31.png" alt="image3" class="image">
+			 <figcaption class="caption"> Fig 1c </figcaption>
+		</figure>			 
+	</div>
+		
+	<a href="../animation/F33_step1.html">Practice and Solve the first layer</a> </p>
+	
+  </section>	
+  
+  <section>
+		
+	<h2>STEP2: SOLVE THE SECOND LAYER (THE EDGES)</h2>
+
+	<div class="image-right" style="width:18%">
+			<img src="../images/3x3/step1.32.png" alt="image" class="image" >
+			<figcaption class="caption"> Fig.2 </figcaption>
+	</div>	
+	<p>
+		Start by turning the cube 180 degrees so the white layer, which is already solved, is at the bottom, creating an upside-down T shape (see Fig.2).
+		Because the center pieces of the second layer are already correctly placed from the previous step, our attention should be focused on the edges.
+		Start by identifying the correct location of the cubie that needs to be relocated. 
+		If it is located on the top layer, adjust the top layer to match either Fig.2a or Fig.2b.
+	
+	</p>
+	<p>(a) Move the front-up edge cubie to the front-right edge position (Fig 2a)using formula: <b>"To the Right"</b>:</h3>
+	<div class="formula"> (U R U' R') (U' F' U F) </div> </p>
+	
+	<p>(b) Move the front-up edge cubie to the front-left edge position  (Fig 2b)using formula: <b>"To the Left"</b>:</h3>
+	<div class="formula"> (U' L' U L) (U F U' F')</div> </p>
+	
+	<div class="image-row">
+		<figure class="n-images">
+			<img src="../images/3x3/step2.01b.png" alt="image1" class="image">
+			<figcaption class="caption"> Fig.2a </figcaption>
+		</figure>
+		<figure class="n-images">
+			<img src="../images/3x3/step2.02b.png" alt="image2" class="image">
+			 <figcaption class="caption"> Fig.2b </figcaption>
+		</figure>
+		<figure class="n-images">
+			<img src="../images/3x3/step2.03.png" alt="image3" class="image">
+			<figcaption class="caption"> Fig.2c </figcaption>
+		</figure>			 
+	</div>
+		
+	<p><b>Tip:</b> The first step of the formula always moves the cubie farther away from the postion it wants to go. </p>
+	<p><b>(c) The edge piece we need is on the second layer but in the wrong place or orientation.</b> </p>
+	<p> In this case, we can put a random edge piece of the top layer to the edge on second layer 
+	using either one of the above formulas (which will bring the edge cubie we want to the top layer), then we encounter situation (a) or (b) again. 
+	<br><br><a href="../animation/F33_to_the_left_or_right.html">Slove the second layer: To the Left or Right</a> 
+	</p>
+	<p> Apply the techniques mentioned above to solve each edge, completing the second layer. 
+	Now, we confront the challenge of solving the last layer, which is understandably the most difficult. 
+	We must keep the layers we have already solved intact while we manipulate the upper layer. 
+	To simplify the process, we divide it into four steps, which are detailed below. </p>
+	
+	<h2>STEP3: Make a YELLOW CROSS on the up layer</h2>
+	<div class="image-right" style="width:16%">
+			<img src="../images/3x3/step3.15.png" alt="image" class="image" >
+			<figcaption class="caption"> A Yellow Cross </figcaption>
+	</div>	
+	
+	<p> To make a yellow cross on the upper layer, we use a straightforward method referred to here as the "fruit" formula which will be applied to each of the subsequent scenarios:</p>
+	<div class="formula"> F R U R' U' F'</div> 
+	
+	<div class="image-container">
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.10.png" alt="Image 1">
+			<div class="caption">Fig.3a </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.11.png" alt="Image 2">
+			<div class="caption">Fig.3b </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.12.png" alt="Image 3">
+			<div class="caption">Fig.3c </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.13.png" alt="Image 4">
+			<div class="caption">Fig.3d </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.14.png" alt="Image 5">
+			<div class="caption">Fig.3e </div>
+		</div>
+    </div>
+		
+	<p> If the top layer already has a yellow line (Fig. 3d or Fig. 3e), <b>make the line horizontal</b> before applying the formula once (Fig. 3e). 
+	This will result in a yellow cross on the top. 
+	If the top layer has a 90-degree rotated L (Fig. 3b or Fig. 3c), we need to apply the formula twice. 
+	If the top layer only has a yellow center (Fig. 3a), which it must have, we need to use the formula three times.
+	You can practice the formula using the provided animation here.
+	<a href="../animation/F33_fruit.html">Fruit </a> </p>
+	
+	<h2>STEP4: MAKE THE UPPER LAYER ALL YELLOW</h2>
+	
+	<p> The center and the four edges of the upper layer are already in the right color (yellow) from the previous step.
+	We now must address the four corner pieces on the upper layer.The cube will be in one of the following five situations. </p>
+	
+	<div class="image-container">
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.21b.png" alt="Image 1">
+			<div class="caption">Fig.4a counter-closewise fish </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.20b.png" alt="Image 2">
+			<div class="caption">Fig.4b clockwise fish</div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.23.png" alt="Image 3">
+			<div class="caption">Fig.4c two wrong colors</div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.24.png" alt="Image 4">
+			<div class="caption">Fig.4d two wrong colors</div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.25.png" alt="Image 5">
+			<div class="caption">Fig.4e Four wrong colors</div>
+		</div>
+    </div>
+	
+		
+	<b> (a) There are 3 non-yellow color on the upper layer (Fig. 4a and Fig. 4b) </b>
+	
+	<p>When there are three non-yellow colors on the top layer (refer to Fig. 4a and Fig. 4b), we refer to this as a fish pattern. 
+	Rotate the top layer until the fish heads are positioned in either the back-left or back-right corner, 
+	ensuring that there is a yellow color on the back layer corresponding to each case. 
+	This will result in one of the following two situations:<br><br>
+	(1) The fish head is located in the <b>back-left</b> corner (Fig.4a). This can be solved using formula: 
+	<div class="formula"> R' U' R U' R' U'2 R </div> <br> 
+	(2) The fish head is located the <b>back-right</b> corner (Fig.4b). This can be solved using formula:  
+	<div class="formula" >L U L' U L U2 L' </div> </p>
+		
+	<p><b>Tips:</b> In the counter-clockwise fish pattern, the yellow color on the back layer moves in a counter-clockwise direction towards the fish head. 
+	When executing the formula, always turn the upper layer in a counter-clockwise direction.<br><br>
+    In the clockwise fish pattern, the yellow color on the back layer moves in a clockwise direction towards the fish head.
+	During the formula sequence, always turn the upper layer in a clockwise direction." </p>
+	
+		
+	<b> (b) There are 2 or 4 non-yellow color on the upper layer (Fig. 4c, Fig. 4b and Fig. 4e) </b>
+	<p>In this scenario, we will continue using the two formulas mentioned earlier, 
+	but they will be applied multiple times. If there are two cubies with incorrect colors, 
+	rotate the cube so that the yellow color is at the <b>back </b> of the left-back corner cubie. 
+	If there are four cubies with incorrect colors, rotate the cube so that the yellow color 
+	is at the <b>left </b>of the left-back corner cubie. 
+	Once the cube is in the correct initial position, apply the counter-clockwise fish formula. 
+	This will result in one of the fish patterns described in (a).</P>
+	<p> <a href="../animation/F33_fish_cw_ccw.html">Animation: Clockwise or Counter-clockwish Fish Patterns </a> </p>
+	<p> <b>Tip:</b> Put the cube in the correct initial condition before applying the formulas.</p>
+	
+	<h2>STEP5: REARRANGE THE UP LAYER'S CORNER PIECES</h2>
+
+	<p>We encounter two cases: <br>
+	<b>(a) One side has two corner pieces with the same color on that side (refer to Fig. 5a).</b>. <br>
+	 </p>  
+	 
+	 <div class="image-container">
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.30.png" alt="Image 1">
+			<div class="caption">Fig.5a </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.31.png" alt="Image 2">
+			<div class="caption">Fig.5a with yellow front</div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.32.png" alt="Image 3">
+			<div class="caption">Fig.5b</div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.33.png" alt="Image 4">
+			<div class="caption">Fig.5b with yellow front</div>
+		</div>
+	
+    </div>
+	 
+	
+	<p>	In this case, place the side with matching corner colors on the right side and 
+	make the yellow layer the front layer (facing us). Apply the formula <a href="../animation/F33_R2D2.html">R2D2 </a> 
+	<div class="formula"> R2 D2 R' U' R D2 R' U R' </div>
+	<br>	
+	<b>(b) No side has two corners with the same color (refer to Fig. 5b). </b>
+	In this situation, it doesn't matter which side is on the right, but ensure the yellow layer is the front layer.
+	Apply the same R2D2 formula, then we will encounter situation (a) again.
+	
+	<h2>STEP6: FIX THE UP LAYER'S EDGE PIECES. </h2>
+	<p>This is the final step. We're almost finished. Rotate the cube so the yellow layer is the upper layer again. 
+	It can only be in one of the following four situations.</p>
+	
+	  <div class="image-container">
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.40.png" alt="Image 1">
+			<div class="caption">Fig.6a </div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.41.png" alt="Image 2">
+			<div class="caption">Fig.6b</div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.42.png" alt="Image 3">
+			<div class="caption">Fig.6c</div>
+		</div>
+		<div class="image-wrapper">
+			<img src="../images/3x3/step3.43.png" alt="Image 4">
+			<div class="caption">Fig.6d</div>
+		</div>
+	  </div>
+
+	
+	<p>
+	For situation in Fig.6a and Fig.6b, one side is soloved. Position the cube so that <b> the solved side is facing us.</b><br><br>
+	<b>(a)The three incorrect edges can be fixed by moving them counter-clockwise (as shown in Fig. 6a) </b> <br>
+	In this case, we can solve the cube by applying the following formula sequence: <br>
+	<div class="formula"> counter-clockwise fish + rotate the whole cube to the right + clockwise fish </div> </p>
+	<p>
+
+	<b>(b) The three incorrect edges that can be corrected by moving them clockwise (as shown in Fig. 6b)</b><br> 
+	In this case, we can solve the cube by applying the following Applying formula sequence: <br>
+	<div class="formula" >clockwise fish + rotate the whole cube to the left + counter-clockwise fish</div></p>
+	<a href="../animation/F33_fish_rotate_fish.html"> Animation: Fix Top Layer's Edges </a>
+	<p> For the other situations, all four edges are incorrect. 
+	 we can use either the clockwise fish formula or the counterclockwise fish formula, 
+	then the cube will be converted into situation (a) or (b).Or </p>
+	<p>
+	<b>(c) In situation shown in Fig.6c, we can apply formula: </b>
+	<div class="formula">M2 U M2 U2 M2 U M2</div> </p> 
+	<p>	
+	<b>(d) In situation shown in Fig. 6d, we can apply the formula: </b>
+	<div class="formula" > M2U M2U MU2 M2U2 MU2</div> </p>
+	<a href="../animation/F33_last_step.html"> Animation: Another Way To Fix Top Layer's Edges </a>
+	<p>
+	<div class="image-right" style="width:16%">
+			<img src="../images/3x3/step3.43b.png" alt="image" class="image" >
+			<figcaption class="caption"> Fig.6e </figcaption>
+	</div>	
+	<b>Tips</b> Ensure the cube is correctly positioned before applying any formulas. Many errors occur due to an incorrect initial position.
+	For instance, consider the image on the right (Fig. 6e). It appears to be in the same configuration of Fig. 6d. 
+	However, if you apply the formula directly to the cube in Fig. 6e, it will not work. 
+	You need to rotate the cube so that the two pairs that need to be exchanged are: Front-Right and Back-Left." (Fig.6d) 
+	</p>
+	
+	<p>Now that we've mastered solving the 3x3 cube, we've grasped the fundamentals. 
+	Building on this foundation, solving the 2x2 cube becomes straightforward. 
+	Moreover, we can extend our skills to solve larger cubes like the 4x4 and 5x5 by 
+	reducing them to 3x3 cubes. <br> <br>
+	<b>Have fun!</b></p>
+</section>	
+</main>
+
+<footer>
+   <p>&copy; 2024 Website: rubikcube.ca.  All rights reserved. </p>
+</footer>
+
+
+<!--<script src = "../js/jquery-3.1.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--<script src="../js/jquery.cube.min.js" defer></script-->
+<script src="../js/jquery.cube3x3.js" defer></script>
+<script src="../js/animation.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Learn about Rubik's Cube and improve your solving skills">
+<meta name="keywords" content="Rubik's Cube, puzzle, solving, algorithm">
+<meta name="author" content="Achan Lin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Rubik's Cube</title>
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet"  href="./css/jquery.cube.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Rubik's Cube: A Dream From My Childhood</h1>
+  <nav>
+    <a href="../index.html">HOME</a> &nbsp
+	<a href="index.html">INTRODUCTION</a> &nbsp
+    <a href="html/2x2cube.html">2x2 CUBE</a> &nbsp
+    <a href="html/3x3cube.html">3x3 CUBE</a> &nbsp
+    <a href="html/4x4cube.html">4x4 CUBE</a> &nbsp
+    <a href="html/5x5cube.html">5x5 CUBE</a> &nbsp
+	<a href="html/comments.html">Contact/Comments</a>
+  </nav>
+</header>
+
+<main>
+  <section >
+    <h2>Basic Concepts</h2>
+    <p>
+    Each Rubik's Cube is made up of 26 small cubies, organized into three main groups: (why not 27=3x3x3?) 
+	<ul>
+		<li> <b>Centers:</b> There are 6 center pieces on each cube, each visible on one side while the other five sides (of this center piece) remain hidden.
+		<li> <b>Edges: </b>The cube has 12 edge pieces, each showing two sides while the other four sides hidden.
+		<li> <b>Corners:</b> There are 8 corner pieces, each displaying three sides with the remaining three sides hidden.
+	</ul>
+	No matter how you move the cube, these pieces retain their identities as centers, edges, and corners.
+	Each Rubik's cube has six sides, denoted as follows:
+	<ul>
+		<li> L: left side </li>
+		<li> R: right side</li>
+		<li> D: down side </li> 
+		<li> U: upper side </li>
+		<li> F: front side </li> 
+		<li> B: back side </li>
+	</ul> 
+	Additionaly, there are three hidden layers:
+	<ul>
+		<li> M: Middle layer (between left and right) </li> 
+		<li> E: Equatorial layer (between down and up)</li> 
+		<li> S: Standing layer (between front and back)</li>
+	</ul>
+	Moves can also involve two layers together, indicated by lowercase letters. 
+	A number 2 followings a letter means repeating the movements twice (e.g. R2 equals RR and R2'equals R'R'). <br>
+	Axes, x, y, and z are used for movements beyond the basic sides and layers <br>
+	</p>	
+	<p>
+	<b>Movements can be made into two directions:</b> 
+	<ul>
+		<li> Clockwise (e.g. R) </li>
+		<li> Counterclosewise (e.g. R')</li>
+	</ul>
+	
+	<b>A Simple Way to Determine Movement Direction</b>
+	<img src="./images/up.jpg" alt="Rubik's cube" style="float:left; margin-right: 15px;  width:70px;height:132px;"> 
+	<img src="./images/right.jpg" alt="Rubik's cube" style="float:left;padding:15px; width:150px;height:100px;">
+	<p>Create a 'thumbs-up' gesture with your right hand, placing it on any side of the cube with 
+	the thumb facing away from that side. The direction of the other four fingers represents a 
+	counter-clockwise movement.</p>
+
+	<p>Similarly, create a 'thumbs-up' gesture with your left hand, placing it on any side of the cube 
+	with the thumb facing away from that side. The direction of the other four fingers 
+	represents a clockwise movement.</p>
+
+	<p>For example, the images on the left demonstrate <b>U'</b> (upper side counter-clockwise) 
+	and <b>R'</b> (right side counter-clockwise).</p>
+
+    <!-- Other content here -->
+  </section>
+
+
+  <section >
+    <h2>Algorithm Symbols</h2>
+	<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		<input type="button" value="M">
+	    <input type="button" value="E">
+	    <input type="button" value="S">
+	    <input type="button" value="M'">
+	    <input type="button" value="E'">	
+		<input type="button" value="S'">		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+	</div>	
+	<div class="cube">
+	</div>
+  </section>
+
+  <section>
+	<h2>About Rubik's Cube</h2>
+	  <p> The Rubik's Cube is a 3-D combination puzzle invented in 1974 by Hungarian sculptor and 
+		professor of architecture <a href="https://en.wikipedia.org/wiki/Ern%C5%91_Rubik" >Erno Rubik </a>, originally called the Magic Cube.
+		Do you know in how many ways we could arrange the cube? </p>
+		
+	  <p class="cc" >43,252,003,027,486,856,000</p>
+		That's approximately 43 quintillion. <br>
+		It's very difficult to solve if you just play it blind. It took Rubik himself over a month to solve his own cube.</p>
+		
+	  <p> <b>The Benefits of Solving the Rubik's Cube: </b> <br><br>
+		1. Enjoyment: It's a fun and engaging activity.<br>
+		2. Improved Dexterity: Solving the cube enhances hand flexibility and coordination..<br>
+		3. Cognitive Exercise: Regular practice keeps your brain active and promotes mental agility.<br>
+		4. Social Connection: It provides opportunities to connect with others who share your interest.s.<br>
+		5. Competitive Engagement: The Rubik's Cube is recognized as an official sport, with numerous competitions held globally.ld.<br><br>
+		Over all, it's a rewarding and enjoyable experience!
+	  </p>
+		
+	  <p> There are tons of videos online. For example:
+		<a href="https://www.youtube.com/watch?v=-SPkrr6rcxo">2014 RUBIK'S CUBE US NATIONAL CHAMPIONSHIPS </a>
+		<a href="https://www.youtube.com/watch?v=Vi5WJZlC330"> BSD Open 2016 Official Competition Rubik's Cube</a> <br>
+		Embark on your Rubik's Cube journey with this website. Let's get started!
+	  </p>
+		<p>The animations in the website are adpated from 
+		<a href="http://collaboradev.com/2015/06/10/new-rubiks-cube-jquery-plugin/"> Jason Graves</a>.  </p>	
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Website: rubikcube.ca.  All rights reserved. </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--script src="./js/jquery.cube.min.js" defer></script-->
+<script src="./js/jquery.cube3x3.js" defer></script>
+<script src="./js/animation.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>F44_combining_edges</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+<body>
+
+	<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+
+	</div>	
+	<div class="row">
+		<div class="column">
+			<div class="cube"></div></div></div>
+
+<div>
+
+<div>	
+	<p>
+	<button onClick= "messItUpF44()"> Mess up as 3x3 cube </button></p>	
+    <p>
+	<input type="button" id="ini1" value="Mess up edges only" name="l' U' R2 U l" onclick="getInitialStatus('ini1')"> </p>
+	<p>
+	<input type="button" id="ini2" value="Mess up edges only" name="r U' F R' U F' r'" onclick="getInitialStatus('ini2')"> </p>
+	<p>
+	<input type="button" id="run1" value="R U R' F R' F' R" onclick="runContinuously('run1')"> </p>
+	
+</div>
+
+
+
+<!--<script src = "../js/jquery-3.1.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--<script src = "../js/jquery.cube.min.js"></script> -->
+<script src = "../js/jquery.cube4x4.js"></script>
+<script src = "../js/animation.js"></script>
+
+</body>
+</html>	

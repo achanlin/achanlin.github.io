@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Step1</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+<body>
+
+<div id="control">
+<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		<input type="button" value="M">
+	    <input type="button" value="E">
+	    <input type="button" value="S">
+	    <input type="button" value="M'">
+	    <input type="button" value="E'">	
+		<input type="button" value="S'">		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+  
+</div>	
+<div >
+<p>
+<button onClick= "messItUp()"> mess up randomly </button> </p>
+<p>
+<input type="button" id="ini1"  value="mess1" name="R' L2 u r B x' F' U' F' U B2" onClick="getInitialStatus('ini1')"> </p>
+<p>
+<input type="button" id="ini2"  value="mess2" name="R' L2 u r B x' F' U' F' U B2 F2 U' B2 U2 R2 U' L2 Z2" onClick="getInitialStatus('ini2')">	</p>
+<p>
+<input type="button" id="ini3"  value="mess3" name="R M2 U f z U R U2 L2 U2 L2 U2 D2 f' R' f D y' D R' D' R D' R' D' R" onClick="getInitialStatus('ini3')">	</p>
+<p>
+<input type="button" id="ini4"  value="mess4" name="F R U R' U' F' M2 U M2 U2 M2 U M2 " onClick="getInitialStatus('ini4')">	</p>
+
+</div>
+ 
+<div class="centered">
+<div class="cube"> </div></div>
+
+
+<!--<script src = "../js/jquery-3.1.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src = "../js/jquery.cube.min.js"></script>
+<script src = "../js/jquery.cube3x3.js"></script>
+<script src = "../js/animation.js"></script>
+
+</body>
+</html>	
+	

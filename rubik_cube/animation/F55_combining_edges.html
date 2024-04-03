@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>F55_combining_edges</title>
+<link rel="stylesheet" href="../css/jquery.cube.css"></link>  
+</head>
+
+<body>
+
+<div id="control">
+		<p>
+        <input type="button" value="L">
+		<input type="button" value="R">
+		<input type="button" value="D">
+	    <input type="button" value="U">	
+		<input type="button" value="F">
+		<input type="button" value="B"> 
+		<input type="button" value="L'">
+		<input type="button" value="R'">
+        <input type="button" value="D'">
+		<input type="button" value="U'">
+	    <input type="button" value="F'">
+	    <input type="button" value="B'"></p>
+		<p>	
+		<input type="button" value="l">
+		<input type="button" value="r">
+		<input type="button" value="d">
+	    <input type="button" value="u">	
+		<input type="button" value="f">
+		<input type="button" value="b"> 
+		<input type="button" value="l'">
+		<input type="button" value="r'">
+        <input type="button" value="d'">
+		<input type="button" value="u'">
+	    <input type="button" value="f'">
+	    <input type="button" value="b'"></p>
+		<p>
+		<input type="button" value="M">
+	    <input type="button" value="E">
+	    <input type="button" value="S">
+	    <input type="button" value="M'">
+	    <input type="button" value="E'">	
+		<input type="button" value="S'">		
+		<input type="button" value="x">
+		<input type="button" value="y">
+        <input type="button" value="z">
+        <input type="button" value="x'">
+		<input type="button" value="y'">
+		<input type="button" value="z'"></p>
+		<p>
+		<input type="button" value="refresh" id="refresh" onClick="location.reload()"> </p>
+	</div>	
+	
+
+<div class="row">
+	<div class="column">
+		<div class="cube"></div></div></div>
+
+Mess up the edges	<br>	
+<input type="button" id="ini1" value="mess1" name="l' U' R2 U l x l' U' R2 U l z l' U' R2 U l y l' U' R2 U l " onclick="getInitialStatus('ini1')">	
+&nbsp
+<input type="button" id="ini2" value="mess2" name="r U' F R' U F' r' x r U' F R' U F' r' y r U' F R' U F' r' " onclick="getInitialStatus('ini2')"> </p>
+<p>
+Basic formula: <br>
+<input type="button" id="run"  value="R U R' F R' F' R" onClick="runContinuously('run')"> 
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src = "../js/jquery.cube5x5.js"></script>
+<script src = "../js/animation.js"></script>
+
+
+</body>
+</html>
