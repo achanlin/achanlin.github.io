@@ -1,9 +1,7 @@
 
-Rubik's Cube, Math Tutoring, and Simple Math Games.
+Rubik's Cube and Simple Math Games.
 
 In the Rubik's Cube section, you will find comprehensive guides, step-by-step tutorials, and animations to solve 2x2x2, 3x3x3, 4x4x4, and 5x5x5 cubes.
-
-Our math tutoring section features educational videos hosted on our YouTube channel.
 
 Simple Math Games offers a straightforward game to practice addition, subtraction, multiplication, and division.
 
