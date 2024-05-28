@@ -1,0 +1,138 @@
+/* Style for the image container */
+ .image-container {
+ 	width: 100%; /* Ensure the image container spans the entire width of its parent */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow images to wrap onto multiple rows if needed */
+ /* justify-content: space-between;  Space evenly between images */
+	justify-content: center;    /* Center items horizontally */
+    padding: 1em; /* Optional padding for spacing, only valid when the justify-content set as "space-between" */
+    box-sizing: border-box; /* Include padding in width calculations */
+	gap:1em;
+  }
+  
+
+  .image-wrapper { /*good for multiple images with caption in one row*/
+    width: calc(20% - 10px); /* Adjust as needed with margin/padding */
+    margin-bottom: 0;
+    text-align: center;
+    box-sizing: border-box;/* Include margin in width calculations */
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .caption {
+	text-align: center;   
+    font-size: 14px;
+	margin-top: 0.5em
+    color: #888;
+  }
+
+/* Styles for images floated to the right, left, or center*/
+	.image-right {
+		float: right;
+		margin: 0 0 0.5em 0.5em; /*the top, right, bottom and left margin*/
+	}
+
+	.image-left {
+		float: left;
+		margin: 0 0.5em 0.5em 0;
+	}
+
+	.image-center {
+		display: block;
+		margin: 0 auto;
+	}
+
+
+	.image-row{
+		display:flex;
+		justify-content: space-between: 1em; 
+	/*	flex-wrap: wrap; /*allow images to wrap to the next line*/
+		padding: 0
+		margin-bottom: 0
+	}
+	.n-images{  /*another way to show multiple images one on row*/
+		max-width:18%; 
+		height:auto;
+	}
+	.image{
+		width: 100%;
+		height: auto;
+	}
+
+	.images5{
+		column-count:5;
+	}
+	
+	
+
+	.small-image {
+            width: 50%; /* Set the width to 20% of its original size */
+            height: auto; /* Maintain aspect ratio */
+    }
+	
+	.stretched-image {
+		width: 103%;
+		height: 157%;
+	/*	object-fit: cover; /* This property helps to cover the space, cropping if necessary */
+	/*	object-fit: contain; /* This property ensures the image fits within the space without distortion */
+	}
+	
+	
+	/* Responsive Design */
+@media (max-width: 480px) { /* Styles for smaller mobile devices */
+
+	.image-wrapper { /*good for multiple images with caption in one row*/
+		width: 100%; /* Adjust as needed with margin/padding */
+		margin-bottom: 0;
+		text-align: center;
+		box-sizing: border-box;/* Include margin in width calculations */
+	}
+	
+ }
+
+@media (min-width: 600px) { /*for regular smart phone*/
+
+  .image-wrapper { /*good for multiple images with caption in one row*/
+    width: calc(25% - 10px); /* Adjust as needed with margin/padding */
+    margin-bottom: 0;
+    text-align: center;
+    box-sizing: border-box;/* Include margin in width calculations */
+  }
+
+  
+
+}
+
+@media (min-width: 768px) { /* Styles for tablets */ 
+	.image-wrapper { /*good for multiple images with caption in one row*/
+    width: calc(25% - 10px); /* Adjust as needed with margin/padding */
+    margin-bottom: 0;
+    text-align: center;
+    box-sizing: border-box;/* Include margin in width calculations */
+  }
+    
+
+
+
+}
+
+@media (min-width: 1025px) { /* Styles for desktops */ }
+
+@media (min-width: 1201px) { /* Styles for extra-large screens */ }
+	
+	
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+   .image-left,
+   .image-center,
+   .image-right {
+        float: none; /* Remove float on smaller screens */
+        margin: 0; /* Reset margins */
+    }
+}
+
+

@@ -1,0 +1,65 @@
+
+header, footer {
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+#comments {
+  margin-bottom: 100px; /* Adjust as needed based on footer height */
+}
+
+.comment {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.comment p {
+  margin: 5px 0;
+}
+
+.comment .reply {
+ /* margin-left: 20px;*/
+}
+
+
+.comment .delete-btn {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.center {
+      text-align: center;
+}
+
+
+/* Adjust the form layout */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+input[type="text"],
+textarea,
+input[type="email"],
+button {
+  margin-left: 0;
+  margin-right: 5%;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  width: auto;
+}
