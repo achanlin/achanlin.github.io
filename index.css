@@ -1,8 +1,8 @@
 
  
 body {
-	/* Location of the image */
-	background-image: url(space.jpg);
+	/* Location of the image 
+	background-image: url(space.jpg); */
 
 	/* Background image is centered vertically and horizontally at all times */
 	background-position: center center;
@@ -21,19 +21,28 @@ body {
 	/* Set a background color that will be displayed
 	while the background image is loading */
 	
-/*	background-color: #464646; */
+	background-color: #C4E1C5; 
 	
 	
+}
+.content-normal {
+        position: relative;
+        color: black; /* Adjust text color as needed */
+        padding: 40px;
+		font-family: 'Helvetica Neue', Arial, sans-serif;
+		text-align: left;
+	  	font-size: 16px;
+		
 }
 
 .content {
         position: relative;
-        color: blue; /* Adjust text color as needed */
+        color: black; /* Adjust text color as needed */
         padding: 20px;
 		font-family: 'Helvetica Neue', Arial, sans-serif;
 		text-align: center;
 	  	font-size: 36px;
-		font-weight:bold;  
+		font-weight: bold;  
 }
 
 
