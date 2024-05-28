@@ -81,7 +81,7 @@ nav ul li:last-child a {
        position: fixed;
        top: 0;
     /*   width: 100%; */
-		width: 700px;
+/*width: 700px; */
        background-color: white;
        color: black;
        padding: 1em 0;
