@@ -14,7 +14,49 @@
     <link rel="stylesheet" type="text/css" href="index.css">  
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+    <style>
+        /* Previous styles remain the same until the @media query */
+        
+        .author-header {
+            display: flex;
+            align-items: flex-start; /* Changed from center to flex-start */
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .author-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+        
+        .author-info {
+            text-align: left; /* Ensure content inside aligns left */
+            width: 100%; /* Take full available width */
+        }
+        
+        @media (max-width: 768px) {
+            .author-header {
+                flex-direction: column;
+                align-items: center; /* Center the image */
+            }
+            
+            .author-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .author-info {
+                text-align: left; /* Keep text left-aligned */
+                padding: 0 15px; /* Add some padding on sides */
+            }
+        }
+    </style>
     <!-- CSS -->
 
 </head>
